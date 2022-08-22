@@ -13,7 +13,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #4b7afa;
+    background-color: #4070f4;
     column-gap: 30px;
 }
 .form{
@@ -88,9 +88,6 @@ form{
 .field button:hover{
     background-color: #016dcb;
 }
-.field button:active {
-    transform: scale(0.98);
-}
 .form-link{
     text-align: center;
     margin-top: 10px;
@@ -100,7 +97,6 @@ form{
     font-size: 14px;
     font-weight: 400;
     color: #232836;
-    
 }
 .form a{
     color: #0171d3;
@@ -130,6 +126,41 @@ form{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+a.facebook{
+    color: #fff;
+    background-color: #4267b2;
+}
+a.facebook .facebook-icon{
+    height: 28px;
+    width: 28px;
+    color: #0171d3;
+    font-size: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+.facebook-icon,
+img.google-img{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+}
+img.google-img{
+    height: 20px;
+    width: 20px;
+    object-fit: cover;
+}
+a.google{
+    border: 1px solid #CACACA;
+}
+a.google span{
+    font-weight: 500;
+    opacity: 0.6;
+    color: #232836;
 }
 
 @media screen and (max-width: 400px) {
