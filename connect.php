@@ -6,7 +6,7 @@ $password = $_POST['password'];
 $confirmPassword = $_POST['passwordConfirm'];
 
 // database connection
-$conn = mysqli('localhost', 'root','', 'student_user' );
+$conn = mysqli_connect('localhost', 'root','', 'student_user' );
 if($conn->connect_error) {
 
     die( 'Error connecting to: '.$conn->connect_error);
