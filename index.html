@@ -49,22 +49,27 @@
             <div class="form signup">
                 <div class="form-content">
                     <header>Signup</header>
-                    <form action="#">
+                    <form action="connect.php" method="post">
                         <div class="field input-field">
-                            <input type="email" placeholder="Email" class="input">
+                            <input type="email" placeholder="Email" class="input" id = "email" name="email">
+                        </div>
+                        <div class="field input-field">
+                            <input type="username" placeholder="username" class="username" id = "username" name="username">
+                        </div>
+                        <div class="field input-field">
+                            <input type="phone number" placeholder="phone number"class="phone number" id = "phoneNumber" name="phonenumber" >
+                        </div>
+                        <div class="field input-field">
+                            <input type="password" placeholder="Create password" class="password" id = "password" name="password">
                         </div>
 
                         <div class="field input-field">
-                            <input type="password" placeholder="Create password" class="password">
-                        </div>
-
-                        <div class="field input-field">
-                            <input type="password" placeholder="Confirm password" class="password">
+                            <input type="password" placeholder="Confirm password" class="password" id = "passwordConfirm" name="passwordConfirm">
                             <i class='bx bx-hide eye-icon'></i>
                         </div>
 
                         <div class="field button-field">
-                            <button>Signup</button>
+                            <button  id="SignInBtn">Signup</button>
                         </div>
                     </form>
 
@@ -79,18 +84,4 @@
         </section>
 
         <script src="Main.js"></script>
-
-
-        <script type = "text/javascript">
-
-          const {UserInfo} = objectToDestruct;
-            userInfo = new UserInfo();
-
-            new UserInfo(userInfo);
-
-            userInfo.displayName ="";
-            
-
-
-
-        </script>
+       
