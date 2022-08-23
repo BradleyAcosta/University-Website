@@ -1,6 +1,0 @@
-SELECT TOP (1000) [id]
-      ,[user_name]
-      ,[email]
-      ,[password]
-      ,[confirm_password]
-  FROM [UserInfo].[dbo].[people]
