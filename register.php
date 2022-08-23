@@ -25,7 +25,7 @@
 				<input type="password" placeholder="Password" name="password">
             </div>
             <div class="input-group">
-				<input type="password" placeholder="Confirm Password" name="cpassword">
+				<input type="password" placeholder="Confirm Password" name="passwordConfirm">
 			</div>
 			<div class="input-group">
 				<button name="submit" class="btn">Register</button>
