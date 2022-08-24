@@ -1,3 +1,23 @@
+<?php
+include 'connect.php';
+
+if (isset($_POST['submit'])) {
+$email = $_POST['email'];
+$username = $_POST['username'];
+$phonenumber = $_POST['phonenumber'];
+$password = md5($_POST['password']);
+$confirmPassword = md5($_POST['passwordConfirm']);
+
+if($password == $confirmPassword) {
+
+} else {
+	echo "<script> alert</script>";
+	}
+}
+
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,7 +30,7 @@
 </head>
 <body>
 	<div class="container">
-		<form action="connect.php" method="POST" class="login-email">
+		<form action="" method="POST" class="login-email">
             <p class="login-text" style="font-size: 2rem; font-weight: 800;">Register</p>
 			<div class="input-group">
 				<input type="text" placeholder="Username" name="username">
@@ -26,6 +46,7 @@
             </div>
             <div class="input-group">
 				<input type="password" placeholder="Confirm Password" name="passwordConfirm">
+
 			</div>
 			<div class="input-group">
 				<button name="submit" class="btn">Register</button>

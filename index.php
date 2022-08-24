@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,7 +16,7 @@
 </head>
 <body>
 	<div class="container">
-		<form action="connect.php" method="POST" class="login-email">
+		<form action="" method="POST" class="login-email">
 			<p class="login-text" style="font-size: 2rem; font-weight: 800;">Login</p>
 			<div class="input-group">
 				<input type="email" placeholder="Email" name="email">

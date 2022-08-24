@@ -81,7 +81,7 @@ form{
 }
 .field button{
     color: #fff;
-    background-color: #0171d3;
+    background-color: #3192e7;
     transition: all 0.3s ease;
     cursor: pointer;
 }
@@ -96,7 +96,7 @@ form{
 .form-link a{
     font-size: 14px;
     font-weight: 400;
-    color: #232836;
+    color: #456dda;
 }
 .form a{
     color: #0171d3;
