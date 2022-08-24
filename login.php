@@ -9,14 +9,14 @@ session_start();
 	if($_SERVER['REQUEST_METHOD'] == "POST")
 	{
 		//something was posted
-		$user_name = $_POST['user_name'];
+		$username = $_POST['username'];
 		$password = $_POST['password'];
 
-		if(!empty($user_name) && !empty($password) && !is_numeric($user_name))
+		if(!empty($username) && !empty($password) && !is_numeric($username))
 		{
 
 			//read from database
-			$query = "select * from users where user_name = '$user_name' limit 1";
+			$query = "select * from users where username = '$username' limit 1";
 			$result = mysqli_query($con, $query);
 
 			if($result)
@@ -64,7 +64,7 @@ session_start();
 			<p class ="login-text"> Login</p>
 			</div>
 			<div class="input-group">
-			<input id="text" type="text" placeholder="email" name="user_name"><br><br>
+			<input id="text" type="text" placeholder="username" name="username"><br><br>
 			</div>
 			<div class="input-group">
 			<input id="text" type="password" placeholder = "password"name="password"><br><br>

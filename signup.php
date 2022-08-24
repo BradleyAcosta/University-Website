@@ -8,15 +8,19 @@ session_start();
 	if($_SERVER['REQUEST_METHOD'] == "POST")
 	{
 		//something was posted
-		$user_name = $_POST['user_name'];
+		$email = $_POST['email'];
+		$username = $_POST['username'];
+		$phonenumber = $_POST['phonenumber'];
 		$password = $_POST['password'];
+		$passwordConfirm = $_POST['passwordConfirm'];
+		
 
-		if(!empty($user_name) && !empty($password) && !is_numeric($user_name))
+		if(!empty($username) && !empty($password) && !empty($passwordConfirm) && !empty($phonenumber) && !empty($passwordConfirm)&& !empty($email) && is_numeric($username))
 		{
 
 			//save to database
 			$user_id = random_num(20);
-			$query = "insert into users (user_id,user_name,password) values ('$user_id','$user_name','$password')";
+			$query = "INSERT Into users (email,username,password,phonenumber,passwordConfirm) values ('$email','$username', '$phonenumber,'$password', '$passwordConfirm')";
 
 			mysqli_query($con, $query);
 
