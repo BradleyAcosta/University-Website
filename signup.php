@@ -10,17 +10,16 @@ session_start();
 		//something was posted
 		$email = $_POST['email'];
 		$username = $_POST['username'];
-		$phonenumber = $_POST['phonenumber'];
 		$password = $_POST['password'];
 		$passwordConfirm = $_POST['passwordConfirm'];
 		
 
-		if(!empty($username) && !empty($password) && !empty($passwordConfirm) && !empty($phonenumber) && !empty($passwordConfirm)&& !empty($email) && is_numeric($username))
+		if(!empty($email) && !empty($username) && !empty($password) && !empty($passwordConfirm) && is_numeric($username))
 		{
 
 			//save to database
-			$user_id = random_num(20);
-			$query = "INSERT Into users (email,username,password,phonenumber,passwordConfirm) values ('$email','$username', '$phonenumber,'$password', '$passwordConfirm')";
+			$Id = random_num(20);
+			$query = "INSERT INTO users (Id, email,username,password,passwordConfirm) values ('$Id, '$email','$username','$password', '$passwordConfirm')";
 
 			mysqli_query($con, $query);
 
@@ -44,22 +43,18 @@ session_start();
 </head>
 <body>
 
-
-
 	<div id="box">
 		
 		<form method="post">
 			<div class="input-group">
 			<p class ="login-text"> Signup</p>
 			</div>
-			<div class="input-group">
-			<input id="text" type="text" name="username" placeholder = "username"><br><br>
-			</div>
+		
 			<div class="input-group">
 			<input id="text" type="email" name="email" placeholder = "email "><br><br>
 			</div>
 			<div class="input-group">
-			<input id="text" type="text" name="phonenumber" placeholder = "phonenumber"><br><br>
+			<input id="text" type="text" name="username" placeholder = "username"><br><br>
 			</div>
 			<div class="input-group">
 			<input id="text" type="password" name="password" placeholder = "password"><br><br>

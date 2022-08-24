@@ -15,12 +15,12 @@ session_start();
 	<link rel="stylesheet" href="main.css">
 </head>
 <body>
-<div class = "container">
+
 	<a href="logout.php">Logout</a>
 	<h1>This is the index page</h1>
 
 	<br>
-	Hello, <?php echo $user_data['user_name']; ?>
-</div>
+	Hello, <?php echo $user_data['username']; ?>
+
 </body>
 </html>
