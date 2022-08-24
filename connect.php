@@ -1,23 +1,14 @@
-<?php
-$email = $_POST['email'];
-$username = $_POST['username'];
-$phonenumber = $_POST['phonenumber'];
-$password = $_POST['password'];
-$confirmPassword = $_POST['passwordConfirm'];
+<?php 
 
-// database connection
-$conn = mysqli_connect('localhost', 'root','', 'student_user' );
-if($conn->connect_error) {
+$server = "localhost";
+$user = "root";
+$pass = "";
+$database = "student_user";
 
-    die( 'Error connecting to: '.$conn->connect_error);
-} else {
-    $stmt = $conn->prepare("insert into registration(email, username, phonenumber, password,passwordConfirm)
-    value(?,?,?,?,?)");
-    $stmt->bind_param("sssssi", $email, $username, $phonenumber, $password, $passwordConfirm);
-    $stmt->execute();
+$conn = mysqli_connect($server, $user, $pass, $database);
 
-    echo "registration Succesfully...";
-    $stmt->close();
-    $con->close();
+if (!$conn) {
+    die("<script>alert('Connection Failed.')</script>");
 }
-?> 
+
+?>
