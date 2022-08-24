@@ -9,9 +9,14 @@ $password = md5($_POST['password']);
 $confirmPassword = md5($_POST['passwordConfirm']);
 
 if($password == $confirmPassword) {
-
+$sql = "INSERT INTO user (email, username, phonenumber, password, paswordConfirm)
+		VALUES('$email', '$username', '$phonenumber', '$password', 'confirmPassword' )";
+		$result = mysqli_query($conn, $sql);
+		if (!$result) {
+			echo "<script>alert('Woops! Something Went Wrong.')</script>";
+		}
 } else {
-	echo "<script> alert</script>";
+	echo "<script>alert('Password Not Matched.')</script>";
 	}
 }
 
