@@ -12,6 +12,7 @@ session_start();
 <html>
 <head>
 	<title>My website</title>
+	<link rel="stylesheet" href="main.css">
 </head>
 <body>
 
