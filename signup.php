@@ -34,6 +34,8 @@ session_start();
 <html>
 <head>
 	<title>Signup</title>
+	<link rel="stylesheet" href="main.css">
+
 
 </head>
 <body>
@@ -43,14 +45,30 @@ session_start();
 	<div id="box">
 		
 		<form method="post">
-			<div style="font-size: 20px;margin: 10px;color: white;">Signup</div>
-
-			<input id="text" type="text" name="user_name"><br><br>
-			<input id="text" type="password" name="password"><br><br>
-
+			<div class="input-group">
+			<p class ="login-text"> Signup</p>
+			</div>
+			<div class="input-group">
+			<input id="text" type="text" name="username" placeholder = "username"><br><br>
+			</div>
+			<div class="input-group">
+			<input id="text" type="email" name="email" placeholder = "email "><br><br>
+			</div>
+			<div class="input-group">
+			<input id="text" type="text" name="phonenumber" placeholder = "phonenumber"><br><br>
+			</div>
+			<div class="input-group">
+			<input id="text" type="password" name="password" placeholder = "password"><br><br>
+			</div>
+			<div class="input-group">
+			<input id="text" type="password" name="passwordConfirm" placeholder = "confirm password"><br><br>
+			</div>
+			<div class="input-group">	
 			<input id="button" type="submit" value="Signup"><br><br>
-
-			<a href="login.php">Click to Login</a><br><br>
+			</div>
+			<div class="input-group">
+			<p class="text-center"><a href="login.php">Click to Login</a><br><br></p>
+			</div>
 		</form>
 	</div>
 </body>

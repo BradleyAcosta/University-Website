@@ -50,51 +50,33 @@ session_start();
 <html>
 <head>
 	<title>Login</title>
+	<link rel="stylesheet" href="main.css">
+
 </head>
 <body>
 
-	<style type="text/css">
-	
-	#text{
 
-		height: 25px;
-		border-radius: 5px;
-		padding: 4px;
-		border: solid thin #aaa;
-		width: 100%;
-	}
-
-	#button{
-
-		padding: 10px;
-		width: 100px;
-		color: white;
-		background-color: lightblue;
-		border: none;
-	}
-
-	#box{
-
-		background-color: grey;
-		margin: auto;
-		width: 300px;
-		padding: 20px;
-	}
-
-	</style>
-
+<div class="container">
 	<div id="box">
 		
 		<form method="post">
-			<div style="font-size: 20px;margin: 10px;color: white;">Login</div>
-
-			<input id="text" type="text" name="user_name"><br><br>
-			<input id="text" type="password" name="password"><br><br>
-
-			<input id="button" type="submit" value="Login"><br><br>
-
-			<a href="signup.php">Click to Signup</a><br><br>
+			<div class="input-group">
+			<p class ="login-text"> Login</p>
+			</div>
+			<div class="input-group">
+			<input id="text" type="text" placeholder="email" name="user_name"><br><br>
+			</div>
+			<div class="input-group">
+			<input id="text" type="password" placeholder = "password"name="password"><br><br>
+			</div>
+			<div class="input-group">
+			<input class = "form-control "id="button" type="submit" value="Login"><br><br>
+			</div>
+<div class="input-group">
+			<p class="text-center"><a href="signup.php">Click to Signup</a><br><br></p>
+</div>
 		</form>
+	</div>
 	</div>
 </body>
 </html>
