@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
     margin: 0;
@@ -55,41 +54,6 @@ body {
     transition: .3s;
 }
 
-.container .login-social a i {
-    margin-right: 5px;
-}
-
-.container .login-social a.facebook {
-    background: #4267B2;
-}
-
-.container .login-social a.twitter {
-    background: #1DA1F2;
-}
-
-.container .login-social a.google-plus {
-    background: #db4a39;
-}
-
-.container .login-social a.linkedin {
-    background: #0e76a8;
-}
-
-.container .login-social a.facebook:hover {
-    background: #3d5fa3;
-}
-
-.container .login-social a.twitter:hover {
-    background: #1991db;
-}
-
-.container .login-social a.google-plus:hover {
-    background: #ca4334;
-}
-
-.container .login-social a.linkedin:hover {
-    background: #0b5c81;
-}
 
 .container .login-email .input-group {
     width: 100%;
@@ -143,14 +107,4 @@ body {
     color: #6c5ce7;
 }
 
-@media (max-width: 430px) {
-    .container {
-        width: 300px;
-    }
-    .container .login-social {
-        display: block;
-    }
-    .container .login-social a {
-        display: block;
-    }
-}
+
