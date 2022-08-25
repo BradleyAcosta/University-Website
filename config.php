@@ -8,7 +8,7 @@ $database = "student_user";
 $conn = mysqli_connect($server, $user, $pass, $database);
 
 if (!$conn) {
-    die("<script>alert('Connection Failed.')</script>");
+    die("<script>alert('Connection Failed...')</script>");
 }
 
 ?>
