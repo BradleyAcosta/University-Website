@@ -41,7 +41,7 @@ header("location : login.php");
     </div>
     <?php endif ?>
 
-    //if the user logs in print information about him
+
     <?php if(isset($_SESSION['username'])) : ?>
 
         <h3> Welcome <strong> <?php echo $_SESSION['username'];?></strong></h3>

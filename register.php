@@ -1,5 +1,6 @@
 <?php
-include('server.php')?>
+include('server.php')
+?>
 
 <!DOCTYPE html>
 <html>
