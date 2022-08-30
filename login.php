@@ -29,18 +29,38 @@ if(isset($_POST["submit"])){
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+	  <link rel="stylesheet" href="style.css">
+
     <title>Login</title>
   </head>
   <body>
-    <h2>Login</h2>
+
+	<div class ="container">
+    <header>Login</header>
+
     <form class="" action="" method="post" autocomplete="off">
-      <label for="usernameemail">Username or Email : </label>
-      <input type="text" name="usernameemail" id = "usernameemail" required value=""> <br>
-      <label for="password">Password : </label>
-      <input type="password" name="password" id = "password" required value=""> <br>
+
+	<div class="field input-field">
+     
+      <input type="text" name="usernameemail" placeholder = "Username or Email "id = "usernameemail" required value=""> <br>
+	</div>
+	
+	<div class="field input-field">
+      <input type="password" name="password" placeholder="Enter your password "id = "password" required value=""> <br>
+	</div>
+
+	<div class = "field button-field">
       <button type="submit" name="submit">Login</button>
+	</div>
+
     </form>
-    <br>
-    <a href="register.php">Registration</a>
+	<div class = "form-link">
+		<b>
+		<br>
+    <span>Don't have an account? <a href="register.php">Register</a></span>
+		</b>
+  </div>
+
+	</div>
   </body>
 </html>

@@ -34,23 +34,49 @@ if(isset($_POST["submit"])){
   <head>
     <meta charset="utf-8">
     <title>Registration</title>
+	<link rel="stylesheet" href="style.css">
+
   </head>
+
   <body>
-    <h2>Registration</h2>
+
+  <div class = "container">
+
+    <header>Registration</header>
     <form class="" action="" method="post" autocomplete="off">
-      <label for="name">Name : </label>
-      <input type="text" name="name" id = "name" required value=""> <br>
-      <label for="username">Username : </label>
-      <input type="text" name="username" id = "username" required value=""> <br>
-      <label for="email">Email : </label>
-      <input type="email" name="email" id = "email" required value=""> <br>
-      <label for="password">Password : </label>
-      <input type="password" name="password" id = "password" required value=""> <br>
-      <label for="confirmpassword">Confirm Password : </label>
-      <input type="password" name="confirmpassword" id = "confirmpassword" required value=""> <br>
+
+		<div class="field input-field">
+      <input type="text" name="name" placeholder = "Name" id = "name" required value=""> <br>
+	  </div>
+
+	    <div class="field input-field">
+      <input type="text" name="username" placeholder = "username" id = "username" required value=""> <br>
+	  </div>
+
+       <div class="field input-field">
+      <input type="email" name="email" placeholder = "Email" id = "email" required value=""> <br>
+	  </div>
+
+	  <div class = "field input-field">
+      <input type="password" name="password" placeholder = "Password" id = "password" required value=""> <br>
+      </div>
+
+       <div class = "field input-field">
+      <input type="password" name="confirmpassword" placeholder = "Confirm Password" id = "confirmpassword" required value=""> <br>
+	  </div>
+
+	  <div class = "field button-field">
       <button type="submit" name="submit">Register</button>
+	  </div>
     </form>
-    <br>
-    <a href="login.php">Login</a>
+
+
+	<div class = "form-link">
+		<b>
+			<br>
+    <span>Already have an account? <a href="login.php">Login</a></span>
+		</b>
+  </div>
+
   </body>
 </html>
