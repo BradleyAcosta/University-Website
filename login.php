@@ -16,7 +16,7 @@
 
 </div>
 
-<form action="index.php" method="post">
+<form action="login.php" method="post">
 <div>
 
 	<label for="username"> Username </label>

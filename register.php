@@ -48,7 +48,7 @@
 				<button type="submit" name="login_user" class="btn">Register</button>
 			</div>
 
-			<p>Have an account? <a href="index.php"><b>Login in</b></a></p>
+			<p>Have an account? <a href="login.php"><b>Login in</b></a></p>
 
 
 		</form>
