@@ -19,7 +19,7 @@ include('server.php')
 
 </div>
 
-<form action="login.php" method="post">
+<form action="login.php" method="POST">
 <div>
 
 	<label for="username"> Username </label>
