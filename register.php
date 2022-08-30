@@ -66,6 +66,7 @@ if(isset($_POST["submit"])){
 	  </div>
 
 	  <div class = "field button-field">
+		<br>
       <button type="submit" name="submit">Register</button>
 	  </div>
     </form>
@@ -73,6 +74,7 @@ if(isset($_POST["submit"])){
 
 	<div class = "form-link">
 		<b>
+			<br>
 			<br>
     <span>Already have an account? <a href="login.php">Login</a></span>
 		</b>

@@ -50,12 +50,14 @@ if(isset($_POST["submit"])){
 	</div>
 
 	<div class = "field button-field">
+		<br>
       <button type="submit" name="submit">Login</button>
 	</div>
 
     </form>
 	<div class = "form-link">
 		<b>
+			<br>
 		<br>
     <span>Don't have an account? <a href="register.php">Register</a></span>
 		</b>

@@ -23,7 +23,9 @@ body {
     padding: 50px;
     width: 100%;
     border-radius: 6px;
+    margin-top: 20px;
 }
+
 
 header {
     font-size:28px;
@@ -32,14 +34,10 @@ header {
     text-align: center;
 }
 
-.container .field{
-    height: 45px;
-    width: 100%;
-}
-
+ 
 .field input,
 .field button{
-    height: 100%;
+    height: 45px;
     width: 100%;
     margin-top: 20px;
      border: none;
@@ -48,6 +46,10 @@ header {
 .field input {
     border: 1px solid #ccc;
     padding: 0 15px;
+    outline: none;
+}
+.field input:focus {
+    border-bottom-width: 2px;
 }
 .form-link {
     text-align: center;
