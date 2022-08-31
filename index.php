@@ -17,6 +17,15 @@ else{
   </head>
   <body>
     <header>Welcome <?php echo $row["name"]; ?></header>
+
+
+
+
+
+
+
+
+    
     <a href="logout.php">Logout</a>
   </body>
 </html>
