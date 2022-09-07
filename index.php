@@ -32,7 +32,7 @@ else{
     <li><a href ="#">About Us</a></li>
    
 
-    <a href="logout.php">Logout</a>
+    <a class= "Logout" href="logout.php">Logout</a>
     </ul>
    </nav>
 
