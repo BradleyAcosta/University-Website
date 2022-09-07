@@ -13,7 +13,7 @@ else{
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
     <title>Index</title>
   </head>
   <body>
@@ -22,9 +22,11 @@ else{
   <p>  Welcome <?php echo $row["name"]; ?></p>
     <ul>
     <li><a href ="index.php">Home</a></li>
-    <li><a href ="#">Contact</a>
+    <li><a href ="#">Curriculum</a>
+    <li><a href ="#">Communication</a>
     <ul>
       <li><a href = "#">Chat</a></li>
+      <li><a href = "#">Calendar</a></li>
     </ul>
   </li>
     <li><a href ="#">About Us</a></li>
