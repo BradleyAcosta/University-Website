@@ -117,7 +117,29 @@ nav ul li a {
 }
 
 nav ul li ul {
-    display: block;
+    display: none;
     position: absolute;
     background-color: #fff;
+    padding: 10px;
+    border-radius:10px;
+}
+nav ul li:hover ul {
+    display: block;
+    
+}
+
+
+nav ul li ul li {
+ width: 100px;
+ border-radius: 1px;
+}
+nav ul li ul li a{
+    padding: 8px 14px;
+
+
+}
+
+nav ul li ul li a:hover{
+    background-color: #f3f3f3;
+
 }
