@@ -30,7 +30,7 @@ else{
     <li><a href ="#">About Us</a></li>
    
 
-    
+    <a href="logout.php">Logout</a>
     </ul>
    </nav>
 
@@ -39,6 +39,6 @@ else{
 
 
     
-    <a href="logout.php">Logout</a>
+
   </body>
 </html>
