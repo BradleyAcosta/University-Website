@@ -23,12 +23,14 @@ else{
     <ul>
     <li><a href ="index.php">Home</a></li>
     <li><a href ="#">Curriculum</a>
+
     <li><a href ="#">Communication</a>
     <ul>
       <li><a href = "#">Chat</a></li>
       <li><a href = "#">Calendar</a></li>
     </ul>
   </li>
+  
     <li><a href ="#">About Us</a></li>
    
 
