@@ -11,15 +11,11 @@ if(isset($_POST["submit"])){
   $result = mysqli_query($conn, "SELECT * FROM registration WHERE username = '$usernameemail' OR email = '$usernameemail'");
   $row = mysqli_fetch_assoc($result);
   if(mysqli_num_rows($result) > 0){
-    if($password == $row['password'] && $Check == $row["Student"]){
+    if($password == $row['password']){
       $_SESSION["login"] = true;
       $_SESSION["id"] = $row["id"];
       header("Location: index.php");
 
-    } else if($Check == $row["Admin"]) {
-      $_SESSION["login"] = true;
-      $_SESSION["id"] = $row["id"];
-      header("Location: admin.php");
     } else{
       echo
       "<script> alert('Wrong Password'); </script>";
@@ -29,7 +25,11 @@ if(isset($_POST["submit"])){
     echo
     "<script> alert('User Not Registered'); </script>";
   }
+
 }
+
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
