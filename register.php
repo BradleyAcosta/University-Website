@@ -5,6 +5,7 @@ if(!empty($_SESSION["id"])){
 }
 if(isset($_POST["submit"])){
   $name = $_POST["name"];
+  $Check = $_POST["AdminOrStudent"];
   $username = $_POST["username"];
   $email = $_POST["email"];
   $password = $_POST["password"];
@@ -15,18 +16,26 @@ if(isset($_POST["submit"])){
     "<script> alert('Username or Email Has Already Taken'); </script>";
   }
   else{
-    if($password == $confirmpassword){
-      $query = "INSERT INTO registration VALUES('','$name','$username','$email','$password')";
+    if($password == $confirmpassword && $Check == "Student" || "Admin"){
+      $query = "INSERT INTO registration VALUES('','$name','$username','$email','$password', '$Check')";
       mysqli_query($conn, $query);
       echo
       "<script> alert('Registration Successful'); </script>";
-    }
-    else{
+
+      
+    } else {
       echo
       "<script> alert('Password Does Not Match'); </script>";
     }
+   if($Check == "Student"){
+    header("Location: index.php");
+   } else if ($Check == "Admin"){
+    header("Location: admin.php");
+   }
   }
 }
+
+
 ?>
 
 <!DOCTYPE html>
@@ -64,6 +73,14 @@ if(isset($_POST["submit"])){
        <div class = "field input-field">
       <input type="password" name="confirmpassword" placeholder = "Confirm Password" id = "confirmpassword" required value=""> <br>
 	  </div>
+
+    <div class = "field Check-input">
+      <label for= "AdminOrStudent">Select if you're a Admin or Student</label>
+      <select name = "AdminOrStudent" id = "AdminOrStudent" required value="">
+  <option value = "Student">Student</option>
+  <option value = "Admin">Admin</option>
+      </select>
+    </div>
 
 	  <div class = "field button-field">
 		<br>
