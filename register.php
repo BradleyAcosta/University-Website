@@ -73,11 +73,11 @@ if(isset($_POST["submit"])){
        <div class = "field input-field">
       <input type="password" name="confirmpassword" placeholder = "Confirm Password" id = "confirmpassword" required value=""> <br>
 	  </div>
-
+<br>
     <div class = "field Check-input">
-      <label for= "AdminOrStudent">Select if you're a Admin or Student</label>
-      <select name = "AdminOrStudent" id = "AdminOrStudent" required value="">
-  <option value = "Student">Student</option>
+      <label class = "form-label">Select User Type:</label><br>
+      <select class  = "AdminOrStudent" name = "role" required value="">
+  <option selected value = "Student">Student</option>
   <option value = "Admin">Admin</option>
       </select>
     </div>
