@@ -15,20 +15,17 @@ if(isset($_POST["submit"])){
       $_SESSION["login"] = true;
       $_SESSION["id"] = $row["id"];
       header("Location: index.php");
-
-    } else{
+    } else {
       echo
       "<script> alert('Wrong Password'); </script>";
     }
-  }
-  else{
+  } else{
     echo
     "<script> alert('User Not Registered'); </script>";
   }
 
+ 
 }
-
-
 
 ?>
 <!DOCTYPE html>
@@ -44,7 +41,7 @@ if(isset($_POST["submit"])){
 	<div class ="container">
     <header>Login</header>
   
-    <
+  
     
     <form class="" action="" method="post" autocomplete="off">
 
@@ -56,6 +53,7 @@ if(isset($_POST["submit"])){
 	<div class="field input-field">
       <input type="password" name="password" placeholder="Enter your password "id = "password" required value=""> <br>
 	</div>
+  
 
 	<div class = "field button-field">
 		<br>

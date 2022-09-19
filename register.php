@@ -5,7 +5,7 @@ if(!empty($_SESSION["id"])){
 }
 if(isset($_POST["submit"])){
   $name = $_POST["name"];
-  $Check = $_POST["AdminOrStudent"];
+  $Check = $_POST["role"];
   $username = $_POST["username"];
   $email = $_POST["email"];
   $password = $_POST["password"];
@@ -16,7 +16,7 @@ if(isset($_POST["submit"])){
     "<script> alert('Username or Email Has Already Taken'); </script>";
   }
   else{
-    if($password == $confirmpassword && $Check == "Student" || "Admin"){
+    if($password == $confirmpassword){
       $query = "INSERT INTO registration VALUES('','$name','$username','$email','$password', '$Check')";
       mysqli_query($conn, $query);
       echo
@@ -27,11 +27,7 @@ if(isset($_POST["submit"])){
       echo
       "<script> alert('Password Does Not Match'); </script>";
     }
-   if($Check == "Student"){
-    header("Location: index.php");
-   } else if ($Check == "Admin"){
-    header("Location: admin.php");
-   }
+   
   }
 }
 
