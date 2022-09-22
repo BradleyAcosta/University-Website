@@ -5,10 +5,10 @@ if(!empty($_SESSION["id"])){
 }
 if(isset($_POST["submit"])){
   $name = $_POST["name"];
-  $Check = $_POST["role"];
   $username = $_POST["username"];
   $email = $_POST["email"];
   $password = $_POST["password"];
+  $Check = $_POST["role"];
   $confirmpassword = $_POST["confirmpassword"];
   $duplicate = mysqli_query($conn, "SELECT * FROM registration WHERE username = '$username' OR email = '$email'");
   if(mysqli_num_rows($duplicate) > 0){
