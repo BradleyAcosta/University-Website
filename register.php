@@ -3,6 +3,7 @@ require 'server.php';
 if(!empty($_SESSION["id"])){
   header("Location: index.php");
 }
+
 if(isset($_POST["submit"])){
   $name = $_POST["name"];
   $username = $_POST["username"];
@@ -10,6 +11,8 @@ if(isset($_POST["submit"])){
   $password = $_POST["password"];
   $Check = $_POST["role"];
   $confirmpassword = $_POST["confirmpassword"];
+
+
   $duplicate = mysqli_query($conn, "SELECT * FROM registration WHERE username = '$username' OR email = '$email'");
   if(mysqli_num_rows($duplicate) > 0){
     echo
@@ -21,16 +24,14 @@ if(isset($_POST["submit"])){
       mysqli_query($conn, $query);
       echo
       "<script> alert('Registration Successful'); </script>";
-
-      
     } else {
       echo
       "<script> alert('Password Does Not Match'); </script>";
     }
    
   }
-}
 
+}
 
 ?>
 
@@ -48,6 +49,9 @@ if(isset($_POST["submit"])){
   <div class = "container">
 
     <header>Registration</header>
+    
+
+
     <form class="" action="" method="post" autocomplete="off">
 
 		<div class="field input-field">
