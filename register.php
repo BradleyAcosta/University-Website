@@ -49,8 +49,6 @@ if(isset($_POST["submit"])){
   <div class = "container">
 
     <header>Registration</header>
-    
-
 
     <form class="" action="" method="post" autocomplete="off">
 

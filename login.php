@@ -6,7 +6,27 @@ if(!empty($_SESSION["id"])){
 
 //-----------------------Verify Account on databse-----------------------------//
 if(isset($_POST["submit"])){
-  $usernameemail = $_POST["usernameemail"];
+
+  if($_POST['user'] == 'admin'){
+    $usernameemail = $_POST["usernameemail"];
+    $password = $_POST["password"];
+    $result = mysqli_query($conn, "SELECT * FROM registration WHERE username = '$usernameemail' OR email = '$usernameemail'");
+    $row = mysqli_fetch_assoc($result);
+    if(mysqli_num_rows($result) > 0){
+      if($password == $row['password']){
+        $_SESSION["login"] = true;
+        $_SESSION["id"] = $row["id"];
+        header("Location: Admin.php");
+      } else {
+        echo
+        "<script> alert('Wrong Password'); </script>";
+      }
+    } else{
+      echo
+      "<script> alert('User Not Registered'); </script>";
+    }
+  } else {
+    $usernameemail = $_POST["usernameemail"];
   $password = $_POST["password"];
   $result = mysqli_query($conn, "SELECT * FROM registration WHERE username = '$usernameemail' OR email = '$usernameemail'");
   $row = mysqli_fetch_assoc($result);
@@ -23,6 +43,10 @@ if(isset($_POST["submit"])){
     echo
     "<script> alert('User Not Registered'); </script>";
   }
+  }
+
+
+  
 }
 
 ?>
@@ -38,10 +62,15 @@ if(isset($_POST["submit"])){
 
 	<div class ="container">
     <header>Login</header>
-  
-  
     
     <form class="" action="" method="post" autocomplete="off">
+<br>
+    <b><p style = "padding-left: 20px; font-size: 15px; font-weight: 700;">Login as: </p></b>
+    <br>
+    <input style = "margin-left: 50px; width: 18px;" type = "radio" name = "user" id="admin" value = "admin">
+    <label for ="admin"> Admin</label>
+    <input style = "margin-left: 50px; width: 18px;" type = "radio" name= "user" id="student" value = "student">
+    <label for = "student"> Student</label>
 
 	<div class="field input-field">
      
@@ -59,6 +88,7 @@ if(isset($_POST["submit"])){
 	</div>
 
     </form>
+
 	<div class = "form-link">
 		<b>
 			<br>
