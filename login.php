@@ -69,9 +69,9 @@ if(isset($_POST["submit"])){
 <br>
     <b><p style = "padding-left: 20px; font-size: 15px; font-weight: 700;">Login as: </p></b>
     <br>
-    <input style = "margin-left: 50px; width: 18px;" type = "radio" name = "user" id="admin" value = "admin">
+    <input style = "margin-left: 50px; width: 18px;" type = "radio" name = "user"  value = "admin" required = "required">
     <label for ="admin"> Admin</label>
-    <input style = "margin-left: 50px; width: 18px;" type = "radio" name= "user" id="student" value = "student">
+    <input style = "margin-left: 50px; width: 18px;" type = "radio" name= "user"  value = "student" required = "required">
     <label for = "student"> Student</label>
 
 	<div class="field input-field">
