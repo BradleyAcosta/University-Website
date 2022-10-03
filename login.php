@@ -25,7 +25,7 @@ if(isset($_POST["submit"])){
       echo
       "<script> alert('User Not Registered'); </script>";
     }
-  } else {
+  } else if($_POST['user'] == 'student') {
     $usernameemail = $_POST["usernameemail"];
   $password = $_POST["password"];
   $result = mysqli_query($conn, "SELECT * FROM registration WHERE username = '$usernameemail' OR email = '$usernameemail'");
@@ -43,10 +43,12 @@ if(isset($_POST["submit"])){
     echo
     "<script> alert('User Not Registered'); </script>";
   }
-  }
+  } else {
 
-
+    echo
+    ("User Registration error");
   
+}
 }
 
 ?>
@@ -63,7 +65,7 @@ if(isset($_POST["submit"])){
 	<div class ="container">
     <header>Login</header>
     
-    <form class="" action="" method="post" autocomplete="off">
+    <form class="" action="login.php" method="post" autocomplete="off">
 <br>
     <b><p style = "padding-left: 20px; font-size: 15px; font-weight: 700;">Login as: </p></b>
     <br>
