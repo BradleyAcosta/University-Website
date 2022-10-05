@@ -46,7 +46,7 @@ if(isset($_POST["submit"])){
   } else {
 
     echo
-    ("User Registration error");
+    "<script> alert('User Registration error'); </script>";
   
 }
 }
@@ -70,9 +70,9 @@ if(isset($_POST["submit"])){
     <b><p style = "padding-left: 20px; font-size: 15px; font-weight: 700;">Login as: </p></b>
     <br>
     <input style = "margin-left: 50px; width: 18px;" type = "radio" name = "user"  value = "admin" required = "required">
-    <label for ="admin"> Admin</label>
+    <label for ="Admin"> Admin</label>
     <input style = "margin-left: 50px; width: 18px;" type = "radio" name= "user"  value = "student" required = "required">
-    <label for = "student"> Student</label>
+    <label for = "Student"> Student</label>
 
 	<div class="field input-field">
      
