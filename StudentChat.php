@@ -19,7 +19,7 @@ else{
     <link rel="stylesheet" href="Chat.css">
     <link rel="stylesheet" href="index.css">
 
-    <title>Chat</title>
+    <title>Chat/Send Message</title>
 </head>
 <body>
 <nav>
@@ -49,9 +49,17 @@ else{
      <h3>Welcome to chat! Were you can communicate with us.</h3>
     
     
+      <form method="post" action="StudentChat.php">
 
-     
-    
+      Send user a message: <input type="textarea" name = "Input"/>
+
+      <input type = "submit" value="Send"/> <br /> <br />
+
+      </form>
+
+    <iframe src="ChatServerS.php" width= "450" height = "200" scrolling= "yes" >
+
+    </iframe>
     
     
     
