@@ -4,7 +4,7 @@ $servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "simple_chat";
-$input = $_POST['input'];
+$input = $_POST['Input'];
 
 
 $conn = new mysqli($servername, $username, $password, $dbname);
