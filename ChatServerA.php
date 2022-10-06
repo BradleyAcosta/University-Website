@@ -18,7 +18,7 @@ $sql = "UPDATE 'chat1  SET 'Message' = '$input' WHERE 'ID' = '1'";
 
 if ($conn->query($sql) == TRUE) {
 
-    header("Location: ChatServerS.php" && header("Location: ChatServerA.php"));
+    header("Location: ChatServerS.php"); //  && header("Location: ChatServerA.php");
 
 } else {
 

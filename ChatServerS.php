@@ -2,13 +2,7 @@
     <body>
 <?php
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "simple_chat";
-
-
-$conn = new mysqli($servername, $username, $password, $dbname);
+$conn = mysqli_connect("localhost", "root", "", "simple_chat");
 
 
 if ($conn->connect_error) {
