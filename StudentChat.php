@@ -30,7 +30,7 @@ else{
 
     <li><a href ="#">Communication</a>
     <ul>
-      <li><a href = "Chat.php">Chat</a></li>
+      <li><a href = "StudentChat.php">Chat</a></li>
       <li><a href = "#">Calendar</a></li>
     </ul>
   </li>
@@ -49,17 +49,20 @@ else{
      <h3>Welcome to chat! Were you can communicate with us.</h3>
     
     
-      <form method="post" action="StudentChat.php">
+      <form method="post" action="">
 
-      Send user a message: <input type="textarea" name = "Input"/>
+      Send user a message: <input type="textarea" name = "input"/>
 
       <input type = "submit" value="Send"/> <br /> <br />
 
       </form>
 
-    <iframe src="ChatServerS.php" width= "450" height = "200" scrolling= "yes" >
 
-    </iframe>
+<!-- Add later on -->
+
+ <!--<iframe src="ChatServerS.php" width= "450" height = "200" scrolling= "yes" >
+
+   </iframe> -->
     
     
     
