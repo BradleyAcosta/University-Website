@@ -6,20 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Chat.css">
     <link rel="stylesheet" href="index.css">
-
-    <title>Chat</title>
+    <title>Calendar/Date</title>
 </head>
 <body>
+
+
 <nav>
-  <p>  Welcome to chat </p>
+  <p>  Welcome to Calendar </p>
     <ul>
     <li><a href ="index.php">Home</a></li>
     <li><a href ="#">Curriculum</a>
 
     <li><a href ="#">Communication</a>
     <ul>
-      <li><a href = "AdminChat.php">Chat</a></li>
-      <li><a href = "#">Calendar</a></li>
+      <li><a href = "StudentChat.php">Chat</a></li>
+      <li><a href = "CalendarStu.php">Calendar</a></li>
     </ul>
   </li>
   
@@ -29,14 +30,8 @@
     </ul>
    </nav>
 
-<div class="container">
 
-<header> Hello <?php echo $row["name"]; ?> </header>
-
-
-</div>
-
-
-    
+   <div class="container">
+    <header> 
 </body>
 </html>

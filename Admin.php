@@ -31,7 +31,7 @@ else{
     </ul>
   </li>
   
-    <li><a href ="#">Programs</a></li>
+    <li><a href ="#">Student</a></li>
    
 
     <a class= "Logout" href="logout.php">Logout</a>

@@ -31,11 +31,11 @@ else{
     <li><a href ="#">Communication</a>
     <ul>
       <li><a href = "StudentChat.php">Chat</a></li>
-      <li><a href = "#">Calendar</a></li>
+      <li><a href = "CalendarStu.php">Calendar</a></li>
     </ul>
   </li>
   
-    <li><a href ="#">Programs</a></li>
+    <li><a href ="#">Student</a></li>
 
     <a class= "Logout" href="logout.php">Logout</a>
     </ul>
