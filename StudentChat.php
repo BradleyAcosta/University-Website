@@ -31,7 +31,7 @@ else{
     <li><a href ="#">Communication</a>
     <ul>
       <li><a href = "StudentChat.php">Chat</a></li>
-      <li><a href = "CalendarA.php">Calendar</a></li>
+      <li><a href = "dynamic-full-calendar.php">Calendar</a></li>
     </ul>
   </li>
   

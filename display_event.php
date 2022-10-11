@@ -1,7 +1,7 @@
 <?php                
 require 'server.php'; 
 $display_query = "select event_id,event_name,event_start_date,event_end_date from calendar_event_master";             
-$results = mysqli_query($con,$display_query);   
+$results = mysqli_query($conn,$display_query);   
 $count = mysqli_num_rows($results);  
 if($count>0) 
 {

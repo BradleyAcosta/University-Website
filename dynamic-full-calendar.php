@@ -1,4 +1,4 @@
-
+require 'server.php'; 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,7 +22,7 @@
     <li><a href ="#">Communication</a>
     <ul>
       <li><a href = "StudentChat.php">Chat</a></li>
-      <li><a href = "CalendarA.php">Calendar</a></li>
+      <li><a href = "dynamic-full-calendar.php">Calendar</a></li>
     </ul>
   </li>
   
@@ -34,7 +34,8 @@
 
 
    <div id = "calendar" class="container">
-    <header> 
+  
+
   
    <!-- Start popup dialog box -->
 <div class="modal fade" id="event_entry_modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
@@ -78,13 +79,11 @@
 		</div>
 	</div>
 </div>
+   </div>
+   
 <!-- End popup dialog box -->
 
 <script>
-$(document).ready(function() {
-	display_events();
-}); //end document.ready block
-
 function display_events() {
 	var events = new Array();
 $.ajax({
