@@ -1,8 +1,3 @@
-<?php
-include 'Calendar.php';
-$calendar = new Calendar();
-
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -27,7 +22,7 @@ $calendar = new Calendar();
     <li><a href ="#">Communication</a>
     <ul>
       <li><a href = "StudentChat.php">Chat</a></li>
-      <li><a href = "CalendarStu.php">Calendar</a></li>
+      <li><a href = "CalendarA.php">Calendar</a></li>
     </ul>
   </li>
   
@@ -41,7 +36,7 @@ $calendar = new Calendar();
    <div class="container">
     <header> 
   
-    <?=$calendar?>
+   
 
 
 </body>
