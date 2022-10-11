@@ -19,7 +19,7 @@
     <li><a href ="#">Communication</a>
     <ul>
       <li><a href = "AdminChat.php">Chat</a></li>
-      <li><a href = "dynamic-full-calendar.php">Calendar</a></li>
+      <li><a href = "dynamic-full-calendar.html">Calendar</a></li>
     </ul>
   </li>
   
