@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(bg.jpg) ;
+    
+}
+
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 6px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding-bottom: 15%;
+    padding-top: 10%;
+    background-position: right center; 
+    font-size:28px;
+    font-weight:600;
+     color : black;
+    text-align: center;
+
+}
+
