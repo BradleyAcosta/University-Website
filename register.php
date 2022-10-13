@@ -9,11 +9,11 @@ if(isset($_POST["submit"])){
   $username = $_POST["username"];
   $email = $_POST["email"];
   $password = $_POST["password"];
-  $Check = $_POST["role"];
+  $Check = $_POST['role'];
   $confirmpassword = $_POST["confirmpassword"];
 
 
-  $duplicate = mysqli_query($conn, "SELECT * FROM registration WHERE username = '$username' OR email = '$email'");
+  $duplicate = mysqli_query($conn, "SELECT * FROM registration WHERE username = '$username' OR email = '$email', role = '$Check'");
   if(mysqli_num_rows($duplicate) > 0){
     echo
     "<script> alert('Username or Email Has Already Taken'); </script>";
@@ -73,10 +73,10 @@ if(isset($_POST["submit"])){
 	  </div>
 <br>
     <div class = "field Check-input">
-      <label class = "form-label">Select User Type:</label><br>
-      <select class  = "AdminOrStudent" name = "role" required value="">
-  <option selected value = "Student">Student</option>
-  <option value = "Admin">Admin</option>
+      <label >Select User Type:</label><br>
+      <select name = "role" required value="">
+     <option value = "student">Student</option>
+     <option value = "admin">Admin</option>
       </select>
     </div>
 
