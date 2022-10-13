@@ -26,7 +26,7 @@ else{
 
     <li><a href ="#">Communication</a>
     <ul>
-      <li><a href = "StudentChat.php">Chat</a></li>
+      <li><a href = "AdminChat.php">Chat</a></li>
       <li><a href = "Calendar.php">Calendar</a></li>
     </ul>
   </li>

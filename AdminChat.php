@@ -13,7 +13,7 @@
 <nav>
   <p>  Welcome to chat </p>
     <ul>
-    <li><a href ="index.php">Home</a></li>
+    <li><a href ="Admin.php">Home</a></li>
     <li><a href ="#">Curriculum</a>
 
     <li><a href ="#">Communication</a>

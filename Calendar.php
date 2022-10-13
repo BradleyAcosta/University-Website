@@ -27,17 +27,17 @@
 <nav>
   <p>  Welcome to Calendar </p>
     <ul>
-    <li><a href ="index.php">Home</a></li>
+    <li><a href ="Admin.php">Home</a></li>
     <li><a href ="#">Curriculum</a>
 
     <li><a href ="#">Communication</a>
     <ul>
-      <li><a href = "StudentChat.php">Chat</a></li>
+      <li><a href = "AdminChat.php">Chat</a></li>
       <li><a href = "Calendar.php">Calendar</a></li>
     </ul>
   </li>
   
-    <li><a href ="#">Student</a></li>
+    <li><a href ="#">Students</a></li>
 
     <a class= "Logout" href="logout.php">Logout</a>
     </ul>
