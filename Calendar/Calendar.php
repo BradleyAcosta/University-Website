@@ -37,7 +37,7 @@
     </ul>
   </li>
   
-    <li><a href ="#">Students</a></li>
+    <li><a href ="StudentAD.php">Students</a></li>
 
     <a class= "Logout" href="logout.php">Logout</a>
     </ul>

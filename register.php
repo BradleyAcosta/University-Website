@@ -1,5 +1,5 @@
 <?php
-require 'server.php';
+require 'database/server.php';
 if(!empty($_SESSION["id"])){
   header("Location: index.php");
 }

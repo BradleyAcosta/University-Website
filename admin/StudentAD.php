@@ -9,12 +9,14 @@ else{
   header("Location: login.php");
 }
 ?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="index.css">
-    <title>Index</title>
+    <link rel="stylesheet" href="Chat.css">
+    <title>Admin dashboard</title>
   </head>
   <body>
 
@@ -31,9 +33,27 @@ else{
     </ul>
   </li>
   
-    <li><a href ="#">Student</a></li>
+    <li><a href ="StudentAD.php">Student</a></li>
    
 
     <a class= "Logout" href="logout.php">Logout</a>
     </ul>
    </nav>
+
+   <div class="container">
+  <h1> Student Information</h1>
+
+<?php
+if(isset($_GET['id'])){
+
+$category_id = $_GET['id'];
+$category_edit = "SELECT * FROM registration WHERE id = '$id'";
+$category_run = mysqli_query($conn, $category_edit);
+}
+?>
+
+
+   </div>
+
+  </body>
+</html>
