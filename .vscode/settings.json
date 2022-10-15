@@ -2,6 +2,8 @@
     "cSpell.ignoreWords": [
         "confirmpassword",
         "getweeks",
+        "logincode",
+        "registercode",
         "servername"
     ],
     "cSpell.words": [
