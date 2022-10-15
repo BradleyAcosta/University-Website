@@ -1,13 +1,6 @@
 <?php
-require 'server.php';
-if(!empty($_SESSION["id"])){
-  $id = $_SESSION["id"];
-  $result = mysqli_query($conn, "SELECT * FROM registration WHERE id = $id");
-  $row = mysqli_fetch_assoc($result);
-}
-else{
-  header("Location: login.php");
-}
+require 'database/server.php';
+
 ?>
 
 <!DOCTYPE html>
@@ -45,7 +38,7 @@ else{
    <div class="container">
     <header> 
       
-    <h1>Hello <?php echo $row["name"]; ?> </h1>
+    <h1>Hello   </h1>
      <h3>Welcome to chat! Were you can communicate with us.</h3>
     
     

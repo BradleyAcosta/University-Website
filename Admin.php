@@ -13,7 +13,7 @@ session_start();
   <body>
 
    <nav>
-  <p>  Welcome <?php echo $row["name"]; ?></p>
+  <p>  <?php include('message.php'); ?></p>
     <ul>
     <li><a href ="Admin.php">Home</a></li>
     <li><a href ="#">Curriculum</a>

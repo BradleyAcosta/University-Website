@@ -31,9 +31,15 @@
 
 <div class="container">
 
-<header> Hello <?php echo $row["name"]; ?> </header>
+<header> Hello Welcome to Chat </header>
 
+<form method="post" action="">
 
+      Send user a message: <input type="textarea" name = "input"/>
+
+      <input type = "submit" value="Send"/> <br /> <br />
+
+      </form>
 </div>
 
 
