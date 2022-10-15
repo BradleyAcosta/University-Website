@@ -1,8 +1,7 @@
 <?php
 require 'database/server.php';
-if(!empty($_SESSION["id"])){
-  header("Location: index.php");
-}
+
+session_start();
 
 
 ?>
@@ -17,6 +16,9 @@ if(!empty($_SESSION["id"])){
   <body>
 
 	<div class ="container">
+
+  <?php include('message.php'); ?>
+
     <header>Login</header>
     
 	<div class="field input-field">

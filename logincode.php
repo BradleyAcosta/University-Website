@@ -54,7 +54,7 @@ if(isset($_POST['submit']))
 }
 else 
 {
- echo "<script> alert ('You are not logged in'); </script>";
+    $_SESSION['message'] ="You are not logged in";
  header("Location: login.php");
  exit();
 
