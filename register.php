@@ -43,14 +43,7 @@ session_start();
       <input required type="password" name="confirmpassword" placeholder = "Confirm Password" id = "confirmpassword" required value=""> <br>
 	  </div>
 <br>
-    <div class = "field Check-input">
-      <label >Select User Type:</label><br>
-      <select name = "role">
-     <option value = "0">Student</option>
-     <option value = "1">Admin</option>
-      </select>
-    </div>
-
+ 
 	  <div class = "field button-field">
 		<br>
       <button type="submit" name="register_btn">Register</button>

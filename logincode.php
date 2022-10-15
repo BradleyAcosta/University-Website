@@ -3,9 +3,9 @@
 session_start();
 include('database/server.php');
 
-if(isset($_POST['submit']))
+if(isset($_POST['login_btn']))
 {
-    $email = mysqli_real_escape_string($conn, $_POST['usernameemail']);
+    $email = mysqli_real_escape_string($conn, $_POST['email']);
     $password = mysqli_real_escape_string($conn,$_POST['password']);
 
     $login_query = "SELECT * FROM registration WHERE email = '$email' AND password = '$password' LIMIT 1";
@@ -17,10 +17,7 @@ if(isset($_POST['submit']))
            $user_id = $data['id'];
            $user_name = $data['name']. ''.$data['username'];
            $user_email = $data['email'];
-           $role_as = $data['role'];
-
-
-
+           $role_as = $data['Check'];
         }
         $_SESSION['auth'] = true;
         $_SESSION['auth_role'] = "$role_as"; //1 = admin , 0 = user
@@ -33,7 +30,7 @@ if(isset($_POST['submit']))
 
         {
             $_SESSION['message'] = "Welcome to dashboard";
-        header("Location: admin/Admin.php");
+        header("Location: Admin.php");
         exit(0);
 
         } else if($_SESSION['auth_role']== '0') // user = 0

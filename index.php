@@ -1,13 +1,7 @@
 <?php
-require 'server.php';
-if(!empty($_SESSION["id"])){
-  $id = $_SESSION["id"];
-  $result = mysqli_query($conn, "SELECT * FROM registration WHERE id = $id");
-  $row = mysqli_fetch_assoc($result);
-}
-else{
-  header("Location: login.php");
-}
+require 'database/server.php';
+session_start();
+
 ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">

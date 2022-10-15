@@ -24,17 +24,17 @@ session_start();
 	<div class="field input-field">
      
   <form action = "logincode.php" method = "POST">
-      <input type="text" name="usernameemail" required placeholder = "Username or Email "id = "usernameemail" required value=""> <br>
+      <input type="text" name="email" required placeholder = "Email"  required value=""> <br>
 	</div>
 	
 	<div class="field input-field">
-      <input type="password" name="password" required placeholder="Enter your password "id = "password" required value=""> <br>
+      <input type="password" name="password" required placeholder="Enter your password " required value=""> <br>
 	</div>
   
 
 	<div class = "field button-field">
 		<br>
-      <button type="submit" name="submit">Login</button>
+      <button type="submit" name="login_btn">Login</button>
 	</div>
 
     </form>
