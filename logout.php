@@ -1,5 +1,5 @@
 <?php
-require 'server.php';
+require 'database/server.php';
 $_SESSION = [];
 session_unset();
 session_destroy();

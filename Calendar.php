@@ -44,7 +44,7 @@
    </nav>
 
    <?php
-include('server.php');
+include('database/server.php');
 $query = $conn->query("SELECT * FROM events ORDER BY id");
 ?>
   <script>
