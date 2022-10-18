@@ -1,5 +1,7 @@
 <?php
 require 'database/server.php';
+include('authentication.php');
+
 session_start();
 
 ?>

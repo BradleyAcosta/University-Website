@@ -1,6 +1,7 @@
 <?php
 require 'database/server.php';
-session_start();
+
+
 
 ?>
 <!DOCTYPE html>
@@ -27,9 +28,10 @@ session_start();
   
     <li><a href ="StudentAD.php">Student</a></li>
    
+    <a class= "Logout" name = "logout_btn" href="logout.php">Logout</a>
 
-    <a class= "Logout" href="logout.php">Logout</a>
     </ul>
    </nav>
+
   </body>
 </html>
