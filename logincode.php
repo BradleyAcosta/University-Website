@@ -21,6 +21,7 @@ if(isset($_POST['login_btn']))
            $user_email = $data['email'];
            $role_as = $data['Check'];
         }
+        // Check ROW on database is either Admin or User
         $_SESSION['auth'] = true;
         $_SESSION['auth_role'] = "$role_as"; //1 = admin , 0 = user on the database check role
         $_SESSION['auth_user'] = [
