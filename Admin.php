@@ -1,7 +1,7 @@
 <?php
 require 'database/server.php';
 
-
+include('authentication.php');
 
 ?>
 <!DOCTYPE html>
