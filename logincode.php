@@ -3,6 +3,8 @@
 session_start();
 include('database/server.php');
 
+
+// Login code to make sure the user account is Valid on the database
 if(isset($_POST['login_btn']))
 {
     $email = mysqli_real_escape_string($conn, $_POST['email']);
@@ -20,7 +22,7 @@ if(isset($_POST['login_btn']))
            $role_as = $data['Check'];
         }
         $_SESSION['auth'] = true;
-        $_SESSION['auth_role'] = "$role_as"; //1 = admin , 0 = user
+        $_SESSION['auth_role'] = "$role_as"; //1 = admin , 0 = user on the database check role
         $_SESSION['auth_user'] = [
             'user_id' =>$user_id,
             'user_name' =>$user_name,
@@ -44,13 +46,14 @@ if(isset($_POST['login_btn']))
     }
     else 
     {
+        //If any wrong information not available int the database, get this error message
         $_SESSION['message'] = "Invalid email or password";
         header("Location: login.php");
         exit(0);
     }
 }
 else 
-{
+{  
     $_SESSION['message'] ="You are not logged in";
  header("Location: login.php");
  exit();
