@@ -1,4 +1,6 @@
 <?php
+
+// Display ay message to the user
 if(isset($_SESSION['message'])) {
 
 ?>

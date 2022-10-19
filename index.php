@@ -1,5 +1,6 @@
 <?php
 require 'database/server.php';
+include('allcode.php');
 include('authentication.php');
 
 
@@ -15,7 +16,7 @@ include('authentication.php');
   <body>
 
    <nav>
-  <p>  <?php include('message.php'); ?></p>
+  <p>  <?php include('message.php'); //Display any error on succeed Message?></p>
     <ul>
     <li><a href ="index.php">Home</a></li>
     <li><a href ="#">Curriculum</a>
