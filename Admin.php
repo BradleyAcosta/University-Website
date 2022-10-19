@@ -1,6 +1,6 @@
 <?php
 require 'database/server.php';
-
+include('allcode.php');
 include('authentication.php');
 
 ?>
@@ -28,7 +28,12 @@ include('authentication.php');
   
     <li><a href ="StudentAD.php">Student</a></li>
    
-    <a class= "Logout" name = "logout_btn" href="logout.php">Logout</a>
+
+    <li>
+    <form action = "allcode.php" method="POST">
+    <button type = "submit" name = "logout_btn">Logout</button>
+    </form>
+    </li>
 
     </ul>
    </nav>

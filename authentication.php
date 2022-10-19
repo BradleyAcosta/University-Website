@@ -1,6 +1,6 @@
 <?php
 include('database/server.php');
-session_start();
+
 
 if(!isset($_SESSION['auth']))
 {

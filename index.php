@@ -30,8 +30,12 @@ include('authentication.php');
     <li><a href ="#">Student</a></li>
    
 
-    <a class= "Logout" href="logout.php">Logout</a>
-    </ul>
+    <li>
+    <form action = "allcode.php" method="POST">
+    <button type = "submit" name = "logout_btn">Logout</button>
+    </form>
+    </li>
+ </ul>
    </nav>
 
 
