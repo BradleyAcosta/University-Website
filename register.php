@@ -44,6 +44,16 @@ session_start();
 	  </div>
 <br>
  
+  <div class = "field Check-input">
+
+  <label class = "form-label">Select User Type:</label><br>
+  <select class = "Check" name = "Check" required value = "">
+    <option value = ""> --Select--</option>
+    <option value = "0">Student</option>
+    <option value = "1">Admin</option>
+  </select>
+  </div>
+
 	  <div class = "field button-field">
 		<br>
       <button type="submit" name="register_btn">Register</button>

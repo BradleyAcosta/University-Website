@@ -85,3 +85,11 @@ header {
         transform: translateY(4px);
   }
 
+select {
+    max-width: 430px;
+    padding: 10px;
+    width: 50%;
+    border-radius: 6px;
+    background-size: cover;
+    margin-top: 20px;
+}
