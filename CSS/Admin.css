@@ -7,6 +7,19 @@ body {
     background-image: url(bg.jpg) ;
 }
 
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 6px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 30%;
+    padding-top: 10%;
+    background-position: right center; 
+}
+
+
 nav {
     width: 100%;
     height: 60px;

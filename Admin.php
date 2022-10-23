@@ -9,12 +9,15 @@ include('authentication.php');
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/Admin.css">
+
+    
+
     <title>Admin dashboard</title>
   </head>
   <body>
 
    <nav>
-  <p>  <?php include('message.php'); //Display any error on succeed Message?></p>
     <ul>
     <li><a href ="Admin.php">Home</a></li>
     <li><a href ="#">Curriculum</a>
@@ -37,6 +40,11 @@ include('authentication.php');
 
     </ul>
    </nav>
+
+   <div class="container">
+   <p><?php include('message.php'); //Display any error on succeed Message?></p>
+   
+
 
   </body>
 </html>

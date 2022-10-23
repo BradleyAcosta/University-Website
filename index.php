@@ -16,7 +16,6 @@ include('authentication.php');
   <body>
 
    <nav>
-  <p>  <?php include('message.php'); //Display any error on succeed Message?></p>
     <ul>
     <li><a href ="index.php">Home</a></li>
     <li><a href ="#">Curriculum</a>
@@ -39,7 +38,8 @@ include('authentication.php');
  </ul>
    </nav>
 
-
+   <div class="container">
+   <p><?php include('message.php'); //Display any error on succeed Message?></p>
 
 
 
