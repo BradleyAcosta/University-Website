@@ -47,6 +47,13 @@
 
       <input type = "submit" value="Send"/> <br /> <br />
 
+
+
+
+      <iframe src="ChatServerS.php" width= "450" height = "200" scrolling= "yes" >
+
+</iframe> 
+
       </form>
     </header>
 

@@ -57,9 +57,9 @@ include('authentication.php');
 
 <!-- Add later on -->
 
- <!--<iframe src="ChatServerS.php" width= "450" height = "200" scrolling= "yes" >
+ <iframe src="ChatServerS.php" width= "450" height = "200" scrolling= "yes" >
 
-   </iframe> -->
+   </iframe> 
     
     
     
