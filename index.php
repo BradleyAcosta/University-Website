@@ -10,7 +10,7 @@ include('authentication.php');
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="CSS/index.css">
     <title>Index</title>
   </head>
   <body>
