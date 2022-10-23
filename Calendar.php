@@ -1,4 +1,9 @@
+<?php
+require 'database/server.php';
+include('allcode.php');
+include('authentication.php');
 
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

@@ -1,5 +1,7 @@
 <?php
 require 'database/server.php';
+include('allcode.php');
+include('authentication.php');
 
 ?>
 
