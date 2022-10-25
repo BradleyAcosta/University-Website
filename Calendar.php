@@ -45,8 +45,10 @@ include('authentication.php');
     <li><a href ="StudentAD.php">Students</a></li>
 
     <li>
+    <div class = "field button">
     <form action = "allcode.php" method="POST">
     <button type = "submit" name = "logout_btn">Logout</button>
+   </div>
     </form>
     </li>
     </ul>

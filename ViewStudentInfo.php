@@ -1,17 +1,18 @@
 <?php
+
 require 'database/server.php';
 include('allcode.php');
 include('authentication.php');
 
-
-
 ?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="CSS/index.css">
-    <title>Index</title>
+    <link rel="stylesheet" href="CSS/Chat.css">
+    <title>User dashboard</title>
   </head>
   <body>
 
@@ -27,8 +28,7 @@ include('authentication.php');
     </ul>
   </li>
   
-    <li><a href ="ViewStudentInfo.php">Student</a></li>
-   
+    <li><a href ="StudentAD.php">Student</a></li>
 
     <li>
     <div class = "field button">
@@ -37,15 +37,16 @@ include('authentication.php');
    </div>
     </form>
     </li>
- </ul>
+    
+    </ul>
    </nav>
 
    <div class="container">
-   <p><?php include('message.php'); //Display any error on succeed Message?></p>
+  <h1> Students Information</h1>
 
 
 
-    
+   </div>
 
   </body>
 </html>

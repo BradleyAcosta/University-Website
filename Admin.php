@@ -33,8 +33,10 @@ include('authentication.php');
    
 
     <li>
+      <div class = "field button">
     <form action = "allcode.php" method="POST">
     <button type = "submit" name = "logout_btn">Logout</button>
+</div>
     </form>
     </li>
 
