@@ -12,6 +12,8 @@ include('authentication.php');
     <meta charset="utf-8">
     <link rel="stylesheet" href="CSS/index.css">
     <link rel="stylesheet" href="CSS/Chat.css">
+    <link rel="stylesheet" href="CSS/Admin.css">
+
     <title>Admin dashboard</title>
   </head>
   <body>

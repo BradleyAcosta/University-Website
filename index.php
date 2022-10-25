@@ -11,6 +11,8 @@ include('authentication.php');
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/Admin.css">
+
     <title>Index</title>
   </head>
   <body>

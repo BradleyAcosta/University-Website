@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/Chat.css">
     <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/Admin.css">
+
 
     <title>Chat</title>
 </head>
