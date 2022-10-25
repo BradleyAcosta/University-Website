@@ -23,7 +23,7 @@ include('authentication.php');
   <p>  Welcome to chat </p>
     <ul>
     <li><a href ="index.php">Home</a></li>
-    <li><a href ="#">Curriculum</a>
+    <li><a href ="#">Enrollment</a>
 
     <li><a href ="#">Communication</a>
     <ul>
