@@ -44,7 +44,7 @@ include('authentication.php');
    </nav>
 
    <div class="container">
-  <h1> Students Informatio</h1>
+  <h1> Students Information</h1>
 
 
   <div class="card-header">

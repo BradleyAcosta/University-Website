@@ -11,7 +11,6 @@ include('authentication.php');
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="CSS/index.css">
-    <link rel="stylesheet" href="CSS/Chat.css">
     <link rel="stylesheet" href="CSS/Admin.css">
 
     <title>Admin dashboard</title>
@@ -55,7 +54,6 @@ include('authentication.php');
  <a href="register-add.php" class="btn btn-primary float-end">Add Admin</a>
  </h4>
  </div>
- <div class="card-body">
   <table id="myDataTable" class="table table-bordered">
   <thead>
   <tr>

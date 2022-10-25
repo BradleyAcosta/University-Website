@@ -17,8 +17,17 @@ body {
     padding-bottom: 30%;
     padding-top: 10%;
     background-position: right center; 
+   
+}
+h1 {
+    font-size: 50px;
+    font-style:"Times New Roman";
 }
 
+h4 {
+    font-size: 20px;
+    font-style:"Times New Roman";
+}
 
 nav {
     width: 100%;
