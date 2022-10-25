@@ -104,17 +104,17 @@ include('authentication.php');
    </td>
   </tr>
   <?php
- }
- }
- else
- {
+      }
+     }
+   else
+   {
+   ?>
+  <tr>
+  <td colspan="6">No Record Found</td>
+  </tr>
+   <?php
+   }
   ?>
- <tr>
- <td colspan="6">No Record Found</td>
- </tr>
-  <?php
- }
- ?>
                             
  </tbody>
  </table>

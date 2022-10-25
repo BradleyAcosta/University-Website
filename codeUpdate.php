@@ -25,11 +25,11 @@ if(isset($_POST['update_user']))
 
   if($query_run) {
     $_SESSION['message'] = "Update Successfully";
-    header("Location : StudentAD.php");
+    header("Location: StudentAD.php");
     exit(0);
   } else {
     $_SESSION['message'] = "An error occurred";
-    header("Location : register-edit.php");
+    header("Location : StudentAD.php");
    exit(0);
 }
 
