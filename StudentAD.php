@@ -64,6 +64,7 @@ include('authentication.php');
   <th>Email</th>
   <th>User Type</th>
   <th>Edit</th>
+  <th>View</th>
   <th>Delete</th>
  </tr>
 </thead>
@@ -97,7 +98,7 @@ include('authentication.php');
 </td>
    <td>
   <?php if($row['Check'] == '1'): ?>
- <button type="button" class="btn btn-danger">No</button>
+ <button type="button" class="btn btn-danger">View</button>
  <?php else: ?>
  <form action="Admin.php" method="POST">
  <button type="submit" name="user_delete" value="<?=$row['id'];?>" class="btn btn-danger">Delete</button>

@@ -39,7 +39,7 @@ if(isset($_POST['login_btn']))
         } else if($_SESSION['auth_role']== '0') // user = 0
         
         { 
-            $_SESSION['message'] = "Welcome to Home Page";
+            $_SESSION['message'] = "Welcome to Student Management System!";
             header("Location: index.php");
             exit(0);
 
