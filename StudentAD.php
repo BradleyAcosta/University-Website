@@ -12,6 +12,7 @@ include('authentication.php');
     <meta charset="utf-8">
     <link rel="stylesheet" href="CSS/index.css">
     <link rel="stylesheet" href="CSS/Admin.css">
+    <link rel="stylesheet" href="CSS/Table.css">
 
     <title>Admin dashboard</title>
   </head>
@@ -54,13 +55,14 @@ include('authentication.php');
  <a href="register-add.php" class="btn btn-primary float-end">Add Admin</a>
  </h4>
  </div>
-  <table id="myDataTable" class="table table-bordered">
+  <table id="myDataTable" class="Table-class">
   <thead>
   <tr>
  <th>ID</th>
   <th>First Name</th>
   <th>Username</th>
   <th>Email</th>
+  <th>User Type</th>
   <th>Edit</th>
   <th>Delete</th>
  </tr>
