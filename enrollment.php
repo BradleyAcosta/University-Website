@@ -49,12 +49,12 @@ include('authentication.php');
 				<table class="Table-class">
 					<thead>
 						<tr>
-							<th class="text-center">#</th>
-							<th class="text-center">Name</th>
-							<th class="text-center">Level Section</th>
-							<th class="text-center">Adviser</th>
-							<th class="text-center">Student Type</th>
-							<th class="text-center">Action</th>
+							<th>#</th>
+							<th>Name</th>
+							<th>Level Section</th>
+							<th>Adviser</th>
+							<th>Student Type</th>
+							<th>Action</th>
 						</tr>
 					</thead>
 					<tbody>
