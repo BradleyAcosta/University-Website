@@ -21,7 +21,7 @@ include('authentication.php');
     <li><a href ="index.php">Home</a></li>
     <li><a href ="#">Curriculum</a>
 
-    <li><a href ="#">Communication</a>
+    <li><a href ="enrollment.php">Communication</a>
     <ul>
       <li><a href = "StudentChat.php">Chat</a></li>
       <li><a href = "#">Calendar</a></li>

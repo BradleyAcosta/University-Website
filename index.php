@@ -20,7 +20,7 @@ include('authentication.php');
    <nav>
     <ul>
     <li><a href ="index.php">Home</a></li>
-    <li><a href ="#">Curriculum</a>
+    <li><a href ="enrollment.php">Curriculum</a>
 
     <li><a href ="#">Communication</a>
     <ul>
