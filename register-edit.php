@@ -11,8 +11,8 @@ include('authentication.php');
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="CSS/index.css">
-    <link rel="stylesheet" href="CSS/Chat.css">
     <link rel="stylesheet" href="CSS/Admin.css">
+    <link rel="stylesheet" href="CSS/Table.css">
 
     <title>Admin dashboard</title>
   </head>
@@ -47,12 +47,13 @@ include('authentication.php');
   <h1> Students Information</h1>
 
 
-  <div class="card-header">
+  <div class="Table-class">
   <h4>Edit User
-     <a href="StudentAD.php" class="btn btn-danger float-end">BACK</a>
+     <a href="StudentAD.php" >BACK</a>
      </h4>
-    </div>
-    <div class="card-body">
+     <br>
+     <br>
+   
 
     <?php
    if(isset($_GET['id']))
@@ -73,21 +74,26 @@ include('authentication.php');
 
       
            <label for="">First Name</label>
+           <br>
        <input type="text" name="name" value="<?=$user['name'];?>" class="form-control">
-
+<br>
     <label for="">Username</label>
+    <br>
      <input type="text" name="username" value="<?=$user['username'];?>" class="form-control">
-
+<br>
    
       <label for="">Email Address</label>
+      <br>
       <input type="text" name="email" value="<?=$user['email'];?>" class="form-control">
-  
+  <br>
          <label for="">Password</label>
+         <br>
          <input type="text" name="password" value="<?=$user['password'];?>" class="form-control">
-
+<br>
   
          <?php if($user['Check'] != '2'): ?>
          <label for="">Role as</label>
+         <br>
          <select name="Check" required class="form-control">
           <option value="">--Select Role--</option>
           <option value="1" <?= $user['Check'] == '1' ? 'selected':'' ?> >Admin</option>
@@ -95,10 +101,11 @@ include('authentication.php');
          </select>
        <?php endif; ?>
                        
-    
-    <button type="submit" name="update_user" class="btn btn-primary">Update User</button>
-  
-  
+ 
+    <div class = "field-button">
+    <button type="submit" name="update_user">Update User</button>
+    </div>
+
      </form>
                             
     <?php
