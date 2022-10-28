@@ -1,0 +1,26 @@
+.Table-class {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+}
+
+.Table-class thead tr{
+    background-color: rgb(78, 78, 240);
+    color: white;
+    text-align: left;
+    font-weight: bold;
+}
+
+.Table-class th,
+.Table-class td {
+    padding: 12px 15px;
+}
+
+.Table-class tbody tr{
+    border-bottom: 1px solid #dddddd;
+}
+
+.Table-class tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
