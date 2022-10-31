@@ -11,7 +11,13 @@ if(!isset($_SESSION['auth']))
 
 else{
     
+    if($_SESSION['auth_role'] != "1")
+{
+    $_SESSION['message'] = "You are not Authorised as ADMIN";
+    header("Location: login.php");
+    exit(0);
     
+}
 }
 
 ?>

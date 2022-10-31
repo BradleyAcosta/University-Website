@@ -2,6 +2,15 @@
 require 'database/server.php';
 
 session_start();
+if(isset($_SESSION['auth']))
+{
+  if(!isset($_SESSION['message'])){
+  $_SESSION['message'] = "You are already logged In";
+  }
+  header("Location: Admin.php");
+  exit(0);
+}
+
 
 
 ?>

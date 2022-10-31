@@ -11,18 +11,15 @@ if(isset($_POST["register_btn"])){
   $role_as = $_POST["Check"];
 
     if($password == $confirmpassword) {
-
         //check email
         $checkEmail = "SELECT email FROM registration WHERE email = '$email' ";
         $checkEmail_run = mysqli_query($conn, $checkEmail);
-
         if(mysqli_num_rows($checkEmail_run) > 0)
         {
             //Already email exists
             $_SESSION['message'] = "Already Email Exists";
             header("Location: register.php");
             exit(0);
-
         }
         else {
            $user_query = "INSERT INTO registration (name, username, email, password, `Check`) VALUES('$name', '$username', '$email', '$password', '$role_as') ";
@@ -30,17 +27,14 @@ if(isset($_POST["register_btn"])){
 
            if($user_query_run)
            {
-
             $_SESSION['message'] = "Registered Successfully";
             header("Location: login.php");
             exit(0);
-
            } else {
 
             $_SESSION['message'] = "Something went wrong";
             header("Location: register.php");
             exit(0);
-
            }
         }
 
@@ -49,12 +43,9 @@ if(isset($_POST["register_btn"])){
         header("Location: register.php");
         exit(0);
     }
-
 } else{
-
     header("Location: register.php");
     exit(0);
-
  }
 
   ?>
