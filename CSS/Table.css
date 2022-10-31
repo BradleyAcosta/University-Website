@@ -100,23 +100,32 @@ label {
     }
   
 .btn-success {
-    background-color: green;
-    color: white;
+    transition-duration: 0.4s;
     font-size: 0.9em;
     text-align: left;
     border-radius: 12px;
     margin: 15px;
+    border: none;
     padding: 12px;
     width: 50px;
    }
 
-.btn-delete {
-    background-color: red;
+   .btn-success:hover {
+    background-color: green;
     color: white;
+}
+
+.btn-delete {
+   
     font-size: 0.9em;
     text-align: left;
     border-radius: 12px;
     margin: 15px;
+    border: none;
     padding: 12px;
     width: 50px;
-    }
+}
+.btn-delete:hover {
+    background-color: red;
+    color: white;
+}

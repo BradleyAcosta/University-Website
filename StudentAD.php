@@ -62,7 +62,7 @@ include('authentication.php');
   <th>First Name</th>
   <th>Username</th>
   <th>Email</th>
-  <th>User Type</th>
+  <th>UserType</th>
   <th>Edit</th>
   <th>Delete</th>
  </tr>
@@ -95,7 +95,7 @@ include('authentication.php');
 <td>
 <a href="register-edit.php?id=<?=$row['id'];?>" class="btn-success">Edit</a>
 </td>
- <td><button type="button" class = "btn-delete">Delete</button></td>
+ <td><a<button type="button" class = "btn-delete">Delete</button></td></a>
   </tr>
   <?php
       }
