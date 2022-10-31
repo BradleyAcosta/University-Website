@@ -99,3 +99,24 @@ label {
           transform: translateY(4px);
     }
   
+.btn-success {
+    background-color: green;
+    color: white;
+    font-size: 0.9em;
+    text-align: left;
+    border-radius: 12px;
+    margin: 15px;
+    padding: 12px;
+    width: 50px;
+   }
+
+.btn-delete {
+    background-color: red;
+    color: white;
+    font-size: 0.9em;
+    text-align: left;
+    border-radius: 12px;
+    margin: 15px;
+    padding: 12px;
+    width: 50px;
+    }

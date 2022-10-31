@@ -1,12 +1,5 @@
 <?php
 session_start();
-session_start();
-if(isset($_SESSION['auth']))
-{
-  $_SESSION['message'] = "You are already logged In";
-  header("Location: Admin.php");
-  exit(0);
-}
 
 
 ?>

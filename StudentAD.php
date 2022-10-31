@@ -64,7 +64,6 @@ include('authentication.php');
   <th>Email</th>
   <th>User Type</th>
   <th>Edit</th>
-  <th>View</th>
   <th>Delete</th>
  </tr>
 </thead>
@@ -94,17 +93,9 @@ include('authentication.php');
 </td>
                                     
 <td>
-<a href="register-edit.php?id=<?=$row['id'];?>" class="btn btn-success">Edit</a>
+<a href="register-edit.php?id=<?=$row['id'];?>" class="btn-success">Edit</a>
 </td>
-   <td>
-  <?php if($row['Check'] == '1'): ?>
- <button type="button" class="btn btn-danger">View</button>
- <?php else: ?>
- <form action="Admin.php" method="POST">
- <button type="submit" name="user_delete" value="<?=$row['id'];?>" class="btn btn-danger">Delete</button>
-  </form>
-        <?php endif; ?>
-   </td>
+ <td><button type="button" class = "btn-delete">Delete</button></td>
   </tr>
   <?php
       }
