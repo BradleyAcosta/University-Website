@@ -43,7 +43,7 @@ include('authentication.php');
    </nav>
 
    <div class="container">
-  <h1> Students Information</h1>
+  <h1> Users/Admin Information</h1>
 
   
   <table id="myDataTable" class="Table-class">
@@ -51,11 +51,8 @@ include('authentication.php');
   <tr>
  <th>ID</th>
   <th>First Name</th>
-  <th>Username</th>
   <th>Email</th>
   <th>User Type</th>
-  <th>Edit</th>
-  <th>Delete</th>
  </tr>
 </thead>
 <tbody>
@@ -71,7 +68,6 @@ include('authentication.php');
   <tr>
   <td><?= $row['id']; ?></td>
   <td><?= $row['name']; ?></td>
-   <td><?= $row['username']; ?></td>
    <td><?= $row['email']; ?></td>
      <td>
    <?php
@@ -81,19 +77,7 @@ include('authentication.php');
   echo 'User';
  }
 ?>
-</td>
-                                    
-<td>
-<a href="register-edit.php?id=<?=$row['id'];?>" class="btn btn-success">Edit</a>
-</td>
-   <td>
-  <?php if($row['Check'] == '1'): ?>
- <button type="button" class="btn btn-danger">No</button>
- <?php else: ?>
- <form action="Admin.php" method="POST">
- <button type="submit" name="user_delete" value="<?=$row['id'];?>" class="btn btn-danger">Delete</button>
-  </form>
-        <?php endif; ?>
+
    </td>
   </tr>
   <?php
