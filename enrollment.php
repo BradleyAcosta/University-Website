@@ -43,6 +43,7 @@ include('authentication.php');
     </li>
  </ul>
    </nav>
+   
         <div class="container">
 				<button type="button" name = "enroll_btn"><i class="fa fa-plus"></i> Enroll New Student</button>
 			
