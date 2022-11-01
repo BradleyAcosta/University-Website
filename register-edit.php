@@ -49,7 +49,7 @@ include('authentication.php');
 
   <div class="Table-class">
   <h4>Edit User
-     <a href="StudentAD.php" >BACK</a>
+     <a href="StudentAD.php" class = "btn-delete">BACK</a>
      </h4>
      <br>
      <br>

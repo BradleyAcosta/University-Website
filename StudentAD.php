@@ -52,7 +52,7 @@ include('authentication.php');
 
   <div class="card-header">
 <h4>Registered User
- <a href="register-add.php" class="btn btn-primary float-end">Add Admin</a>
+ <a href="register-add.php" class="btn-success">Add Admin</a>
  </h4>
  </div>
   <table id="myDataTable" class="Table-class">
