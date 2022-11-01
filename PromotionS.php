@@ -43,7 +43,7 @@ include('authentication.php');
    </nav>
    
         <div class="container">
-    <h2> Add any Update, News and Images for further Updates for the University</h2>
+    <h2> Add Images or videos for further Updates for the University</h2>
     <br>
     <br>
     <form method="post" enctype="multipart/form-data" action="upload-form.php">
