@@ -1,6 +1,13 @@
 <?php
 session_start();
 
+if(isset($_SESSION['auth']))
+{
+  $_SESSION['message'] = "You are already Registered";
+  header("Location: index.php");
+  exit(0);
+}
+
 
 ?>
 

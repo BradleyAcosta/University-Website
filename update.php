@@ -13,4 +13,10 @@ if(isset($_POST["id"]))
     $sql = "UPDATE events SET title='$title', start_event='$start', end_event='$end' WHERE id = $id"; 
     $conn->query($sql); 
 }
+if(!isset($_SESSION['auth']))
+{
+    $_SESSION['message'] = "Login to Access Website";
+    header("Location: login.php");
+    exit(0);
+}
 ?>

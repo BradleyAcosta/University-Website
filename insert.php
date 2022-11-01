@@ -12,4 +12,10 @@ if(isset($_POST["title"]))
     $sql = "INSERT INTO events(title, start_event, end_event) VALUES ('$title','$start','$end')"; 
     $conn->query($sql); 
 }
+if(!isset($_SESSION['auth']))
+{
+    $_SESSION['message'] = "Login to Access Website";
+    header("Location: login.php");
+    exit(0);
+}
 ?>

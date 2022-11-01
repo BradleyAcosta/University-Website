@@ -9,4 +9,10 @@ if(isset($_POST["id"]))
     $sql = "DELETE FROM events WHERE id = $id"; 
     $conn->query($sql);
 }   
+if(!isset($_SESSION['auth']))
+{
+    $_SESSION['message'] = "Login to Access Website";
+    header("Location: login.php");
+    exit(0);
+}
 ?>
