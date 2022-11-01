@@ -121,7 +121,7 @@ nav ul li ul li a:hover{
           transform: translateY(4px);
     }
   
-    #custom-button {
+     image {
         padding: 10px;
         color: white;
         background-color: rgb(78, 78, 240);
@@ -130,7 +130,7 @@ nav ul li ul li a:hover{
         cursor: pointer;
       }
       
-      #custom-button:hover {
+     image:hover {
         background-color: black
       }
       

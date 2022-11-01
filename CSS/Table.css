@@ -129,3 +129,18 @@ label {
     background-color: red;
     color: white;
 }
+
+.btn-upload {
+    transition-duration: 0.4s;
+    font-size: 0.9em;
+    text-align: left;
+    border-radius: 15px;
+    margin: 15px;
+    border: none;
+    padding: 20px;
+    width: 90px;
+}
+.btn-upload:hover {
+    background-color: green;
+    color: white;
+}

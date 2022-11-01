@@ -55,7 +55,7 @@ include('authentication.php');
     <label for="file2">Another file</label>
     <input type="file" name="file2" id="file2">
 
-    <button>Upload</button>
+    <button class ="btn-upload">Upload</button>
 
 </form>
         </div>
