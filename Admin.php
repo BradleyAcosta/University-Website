@@ -8,7 +8,7 @@ include('authentication.php');
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="CSS/index.css">
+
     <link rel="stylesheet" href="CSS/Admin.css">
 
     
@@ -20,19 +20,15 @@ include('authentication.php');
    <nav>
     <ul>
     <li><a href ="Admin.php">Home</a></li>
-    <li><a href ="enrollment.php">Enrollment</a>
-
     <li><a href ="#">Communication</a>
     <ul>
       <li><a href = "AdminChat.php">Chat</a></li>
       <li><a href = "Calendar.php">Calendar</a></li>
     </ul>
   </li>
-  
     <li><a href ="StudentAD.php">Student</a></li>
     <li><a href ="Promotion.php">Uploads</a></li>
    
-
     <li>
       <div class = "field button">
     <form action = "allcode.php" method="POST">

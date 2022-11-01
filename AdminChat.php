@@ -16,7 +16,6 @@
   <p>  Welcome to chat </p>
     <ul>
     <li><a href ="Admin.php">Home</a></li>
-    <li><a href ="#">Enrollment</a>
 
     <li><a href ="#">Communication</a>
     <ul>
