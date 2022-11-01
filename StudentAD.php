@@ -95,7 +95,14 @@ include('authentication.php');
 <td>
 <a href="register-edit.php?id=<?=$row['id'];?>" class="btn-success">Edit</a>
 </td>
- <td><a<button type="button" class = "btn-delete">Delete</button></td></a>
+
+ <td>
+  <form action ="codeUpdate.php" method="POST">  
+    
+  <button type="submit" name = "user_delete" value= "<?= $row['id']; ?>" class = "btn-delete">Delete</button>
+  </td>
+</form>
+
   </tr>
   <?php
       }

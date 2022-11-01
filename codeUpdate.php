@@ -4,6 +4,27 @@ include('allcode.php');
 include('authentication.php');
 
 
+if(isset($_POST['user_delete']))
+{
+  $user_id = $_POST['user_delete'];
+
+  $query = "DELETE FROM registration WHERE id = '$user_id' ";
+  $query_run = mysqli_query($conn, $query);
+
+  if($query_run) 
+  {
+    $_SESSION['message'] = "Admin/user Deleted Successfully";
+    header("Location: StudentAD.php");
+    exit(0);
+  } else {
+    $_SESSION['message'] = "An error occurred";
+    header("Location : StudentAD.php");
+   exit(0);
+
+}
+}
+
+
 if(isset($_POST['add_user'])) {
   $user_id = $_POST['user_id'];
   $name = $_POST['name'];
