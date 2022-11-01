@@ -1,6 +1,7 @@
 <?php
 session_start();
 
+
 //Logged out Code
 if(isset($_POST['logout_btn'])) {
 
