@@ -45,6 +45,7 @@ include('authentication.php');
   </li>
   
     <li><a href ="ViewStudentInfo.php">Students</a></li>
+    <li><a href ="PromotionS.php">Uploads</a></li>
 
     <li>
     <div class = "field button">

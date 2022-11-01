@@ -30,6 +30,7 @@ include('authentication.php');
   </li>
   
     <li><a href ="ViewStudentInfo.php">Student</a></li>
+    <li><a href ="PromotionS.php">Uploads</a></li>
    
 
     <li>

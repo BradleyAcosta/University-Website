@@ -32,6 +32,7 @@ include('authentication.php');
     </ul>
   </li>
   <li><a href ="ViewStudentInfo.php">Students</a></li>
+  <li><a href ="PromotionS.php">Uploads</a></li>
   <li>
   <div class = "field button">
     <form action = "allcode.php" method="POST">
