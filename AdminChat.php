@@ -13,7 +13,7 @@
 </head>
 <body>
 <nav>
-  <p>  Welcome to chat </p>
+
     <ul>
     <li><a href ="Admin.php">Home</a></li>
 
