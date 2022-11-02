@@ -47,14 +47,11 @@ include('authentication.php');
     <h2> Add Images or videos for further Updates for the University</h2>
     <br>
     <br>
-    <form method="post" enctype="multipart/form-data" action="upload-form.php">
+    <form method="post" enctype="multipart/form-data" action="upload.php">
 
     <!-- <input type="hidden" name="MAX_FILE_SIZE" value="1048576"> -->
     <label for="image">Image file</label>
-    <input type="file" id="image" name="image">
-
-    <label for="file2">Another file</label>
-    <input type="file" name="file2" id="file2">
+    <input type="file" id="image" name="my_image">
 
     <button class ="btn-upload" name = "submit">Upload</button>
 

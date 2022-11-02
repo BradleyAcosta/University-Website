@@ -17,7 +17,7 @@ include('authentication.php');
 	<link rel="stylesheet" href="CSS/Table.css">
 
     <link rel="stylesheet" href="CSS/Admin.css">
-	<title>Enrollment</title>
+	<title>Promotion/News</title>
 </head>
 <body>
 <nav>
@@ -47,9 +47,13 @@ include('authentication.php');
    </nav>
    
         <div class="container">
+          <h2>University Promotions/News :</h2>
+          <br>
+          <br>
 
-        <?php
-        $sql = "SELECT * FROM images ORDER BY id DESC";
+        <?php 
+        //ADDED DATA BASE IMAGE FROM ADMIN TO STUDENT
+          $sql = "SELECT * FROM images ORDER BY id DESC";
           $res = mysqli_query($conn,  $sql);
 
           if (mysqli_num_rows($res) > 0) {
@@ -60,9 +64,8 @@ include('authentication.php');
              </div>
           		
     <?php } }?>
-     
-
-        </div>
-       
+      
 </body>
 </html>
+      
+     
