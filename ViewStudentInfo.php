@@ -44,7 +44,7 @@ include('authentication.php');
    </nav>
 
    <div class="container">
-  <h1> Users/Admin Information</h1>
+  <h2> Users/Admin Information</h2>
 
   
   <table id="myDataTable" class="Table-class">

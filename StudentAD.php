@@ -47,7 +47,7 @@ include('authentication.php');
    <div class="container">
 <?php    include('message.php'); ?>
 
-  <h1> Students Information</h1>
+  <h2> Students Information</h2>
 
 
   <div class="card-header">

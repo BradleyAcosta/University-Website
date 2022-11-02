@@ -32,7 +32,6 @@ include('authentication.php');
 
 
 <nav>
-  <p>  Welcome to Calendar </p>
     <ul>
     <li><a href ="index.php">Home</a></li>
     <li><a href ="enrollment.php">Enrollment</a>
