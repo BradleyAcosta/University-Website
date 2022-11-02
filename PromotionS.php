@@ -77,13 +77,8 @@ include('authentication.php');
   <td><?= $row['id']; ?></td>
   <td><?= $row['image_url']; ?></td>
      <td>
-   <?php
-  
- 
-}
-?>
-</td>
-                                    
+
+</td>                            
 <td>
 <a href="register-edit.php?id=<?=$row['id'];?>" class="btn-success">Edit</a>
 </td>
@@ -97,17 +92,9 @@ include('authentication.php');
 
   </tr>
   <?php
-  }
-   else
-   {
-   ?>
-  <tr>
-  <td colspan="6">No Record Found</td>
-  </tr>
-   <?php
+  } 
    }
   ?>
-?>
 </td>
 
 </form>
