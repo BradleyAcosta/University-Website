@@ -55,6 +55,61 @@ include('authentication.php');
 
     <button class ="btn-upload" name = "submit">Upload</button>
 
+    <table id="myDataTable" class="Table-class">
+  <thead>
+  <tr>
+ <th>ID</th>
+  <th>Images</th>
+  <th>Edit</th>
+  <th>Delete</th>
+ </tr>
+</thead>
+<?php // Get Student information from database
+ $query = "SELECT * FROM images";
+ $query_run = mysqli_query($conn, $query);
+
+ if(mysqli_num_rows($query_run) > 0)
+  {
+  foreach($query_run as $row)
+  {
+  ?>
+  <tr>
+  <td><?= $row['id']; ?></td>
+  <td><?= $row['image_url']; ?></td>
+     <td>
+   <?php
+  
+ 
+}
+?>
+</td>
+                                    
+<td>
+<a href="register-edit.php?id=<?=$row['id'];?>" class="btn-success">Edit</a>
+</td>
+
+ <td>
+  <form action ="codeUpdate.php" method="POST">  
+    
+  <button type="submit" name = "user_delete" value= "<?= $row['id']; ?>" class = "btn-delete">Delete</button>
+  </td>
+</form>
+
+  </tr>
+  <?php
+  }
+   else
+   {
+   ?>
+  <tr>
+  <td colspan="6">No Record Found</td>
+  </tr>
+   <?php
+   }
+  ?>
+?>
+</td>
+
 </form>
         </div>
 
