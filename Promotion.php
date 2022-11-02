@@ -48,14 +48,18 @@ include('authentication.php');
    
         <div class="container">
 
-      
-   <?php 
-   $profileimage = mysqli_query
-   
-   $row = mysqli_fetch_array($profileimage);
-   $showimage = $row['imagefile'];
-   
-   ?>
+        <?php
+        $sql = "SELECT * FROM images ORDER BY id DESC";
+          $res = mysqli_query($conn,  $sql);
+
+          if (mysqli_num_rows($res) > 0) {
+          	while ($images = mysqli_fetch_assoc($res)) {  ?>
+             
+             <div class="alb">
+             	<img src="uploads/<?=$images['image_url']?>">
+             </div>
+          		
+    <?php } }?>
      
 
         </div>

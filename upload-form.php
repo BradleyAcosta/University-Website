@@ -82,10 +82,20 @@ if (!move_uploaded_file($_FILES["image"]["tmp_name"], $destination)) {
 
     exit("Can't move uploaded file");
 
+} else {
+
+    $sql = "INSERT INTO images(image_url) 
+				        VALUES('image')";
+				mysqli_query($conn, $sql);
+			
+                echo "File uploaded successfully.";
+
 }
 
-echo "File uploaded successfully.";
+
+
+
+
 ?>
 
 
-<link a href=""

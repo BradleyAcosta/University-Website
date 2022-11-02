@@ -4,15 +4,6 @@ include('allcode.php');
 include('authentication.php');
 
 
-
-if(isset($_POST['submit']) && isset($_FILES['image'])) {
-
-
-
-
-}
-
-
 ?>
 
 <!DOCTYPE html>
