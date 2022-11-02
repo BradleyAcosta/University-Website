@@ -1,7 +1,7 @@
 <?php 
 
 if (isset($_POST['submit']) && isset($_FILES['my_image'])) {
-require 'database/server.php';
+	require 'database/server.php';
  include('allcode.php');
  include('authentication.php');
 
@@ -18,7 +18,7 @@ require 'database/server.php';
 	if ($error === 0) {
 		if ($img_size > 125000) {
 			$em = "Sorry, your file is too large.";
-		    header("Location: PromotionS.php?error=$em");
+		    header("Location:  PromotionS.php?error=$em");
 		}else {
 			$img_ex = pathinfo($img_name, PATHINFO_EXTENSION);
 			$img_ex_lc = strtolower($img_ex);
@@ -36,7 +36,7 @@ require 'database/server.php';
 				mysqli_query($conn, $sql);
 			}else {
 				$em = "You can't upload files of this type";
-		        header("Location: PromotionS.php?error=$em");
+		        header("Location:  PromotionS.php?error=$em");
 			}
 		}
 	}else {
