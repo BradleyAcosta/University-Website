@@ -60,10 +60,10 @@ include('authentication.php');
   <tr>
  <th>ID</th>
   <th>Images</th>
-  <th>Edit</th>
   <th>Delete</th>
  </tr>
 </thead>
+<tbody>
 <?php // Get Student information from database
  $query = "SELECT * FROM images";
  $query_run = mysqli_query($conn, $query);
@@ -76,30 +76,30 @@ include('authentication.php');
   <tr>
   <td><?= $row['id']; ?></td>
   <td><?= $row['image_url']; ?></td>
-     <td>
-
-</td>                            
-<td>
-<a href="register-edit.php?id=<?=$row['id'];?>" class="btn-success">Edit</a>
-</td>
-
- <td>
+<td>            
   <form action ="codeUpdate.php" method="POST">  
     
-  <button type="submit" name = "user_delete" value= "<?= $row['id']; ?>" class = "btn-delete">Delete</button>
+  <button type="submit" name = "Image_delete" value= "<?= $row['id']; ?>" class = "btn-delete">Delete</button>
   </td>
-</form>
-
+  </form>
   </tr>
   <?php
   } 
    }
-  ?>
-</td>
-
-</form>
-        </div>
-
-</body>
-</html>
-   
+   else
+   {
+    ?>
+    <tr>
+    <td colspan="6">No Record Found</td>
+    </tr>
+     <?php
+     }
+    ?>
+                              
+   </tbody>
+   </table>
+  </div>
+  </div>
+    </div>
+    </body>
+  </html>

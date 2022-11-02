@@ -1,7 +1,7 @@
 <?php 
 
 if (isset($_POST['submit']) && isset($_FILES['my_image'])) {
-	require 'database/server.php';
+require 'database/server.php';
  include('allcode.php');
  include('authentication.php');
 
@@ -18,7 +18,7 @@ if (isset($_POST['submit']) && isset($_FILES['my_image'])) {
 	if ($error === 0) {
 		if ($img_size > 125000) {
 			$em = "Sorry, your file is too large.";
-		    header("Location: index.php?error=$em");
+		    header("Location: PromotionS.php?error=$em");
 		}else {
 			$img_ex = pathinfo($img_name, PATHINFO_EXTENSION);
 			$img_ex_lc = strtolower($img_ex);
@@ -36,14 +36,14 @@ if (isset($_POST['submit']) && isset($_FILES['my_image'])) {
 				mysqli_query($conn, $sql);
 			}else {
 				$em = "You can't upload files of this type";
-		        header("Location: index.php?error=$em");
+		        header("Location: PromotionS.php?error=$em");
 			}
 		}
 	}else {
 		$em = "unknown error occurred!";
-		header("Location: index.php?error=$em");
+		header("Location: PromotionS.php?error=$em");
 	}
 
 }else {
-	header("Location: index.php");
+	header("Location: PromotionS.php");
 }

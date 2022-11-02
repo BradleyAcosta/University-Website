@@ -3,7 +3,28 @@ require 'database/server.php';
 include('allcode.php');
 include('authentication.php');
 
+//Delete Images From Admin
+if(isset($_POST['Image_delete']))
+{
+  $user_id = $_POST['Image_delete'];
 
+  $query = "DELETE FROM images WHERE id = '$user_id' ";
+  $query_run = mysqli_query($conn, $query);
+
+  if($query_run) 
+  {
+    $_SESSION['message'] = "Admin/user Deleted Successfully";
+    header("Location: PromotionS.php");
+    exit(0);
+  } else {
+    $_SESSION['message'] = "An error occurred";
+    header("Location : PromotionS.php");
+   exit(0);
+
+}
+}
+
+//Delete User From Admin
 if(isset($_POST['user_delete']))
 {
   $user_id = $_POST['user_delete'];
@@ -24,7 +45,7 @@ if(isset($_POST['user_delete']))
 }
 }
 
-
+//Add an ADMIN/USER From Admin
 if(isset($_POST['add_user'])) {
   $user_id = $_POST['user_id'];
   $name = $_POST['name'];
@@ -49,7 +70,7 @@ if(isset($_POST['add_user'])) {
 }
 }
 
-
+//EDIT THE USER INFO FROM ADMIN
 if(isset($_POST['update_user']))
 {
   $user_id = $_POST['user_id'];

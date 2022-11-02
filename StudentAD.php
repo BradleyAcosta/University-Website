@@ -102,7 +102,6 @@ include('authentication.php');
   <button type="submit" name = "user_delete" value= "<?= $row['id']; ?>" class = "btn-delete">Delete</button>
   </td>
 </form>
-
   </tr>
   <?php
       }
@@ -116,16 +115,14 @@ include('authentication.php');
    <?php
    }
   ?>
-                            
+                          
  </tbody>
  </table>
-
 </div>
 </div>
 </div>
 </div>
 </div>
 </div>
-
   </body>
 </html>
