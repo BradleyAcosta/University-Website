@@ -3,6 +3,8 @@ require 'database/server.php';
 include('allcode.php');
 include('authentication.php');
 
+
+
 ?>
 
 <!DOCTYPE html>
@@ -45,6 +47,18 @@ include('authentication.php');
    </nav>
    
         <div class="container">
+
+      
+   <?php 
+   $profileimage = mysqli_query
+   
+   $row = mysqli_fetch_array($profileimage);
+   $showimage = $row['imagefile'];
+   
+   ?>
+     
+
         </div>
+       
 </body>
 </html>

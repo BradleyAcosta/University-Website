@@ -35,7 +35,7 @@ include('authentication.php');
   <p>  Welcome to Calendar </p>
     <ul>
     <li><a href ="index.php">Home</a></li>
-    <li><a href ="#">Enrollment</a>
+    <li><a href ="enrollment.php">Enrollment</a>
 
     <li><a href ="#">Communication</a>
     <ul>
@@ -45,7 +45,7 @@ include('authentication.php');
   </li>
   
     <li><a href ="ViewStudentInfo.php">Students</a></li>
-    <li><a href ="PromotionS.php">Uploads</a></li>
+    <li><a href ="Promotion.php">Uploads</a></li>
 
     <li>
     <div class = "field button">

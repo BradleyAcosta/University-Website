@@ -3,6 +3,16 @@ require 'database/server.php';
 include('allcode.php');
 include('authentication.php');
 
+
+
+if(isset($_POST['submit']) && isset($_FILES['image'])) {
+
+
+
+
+}
+
+
 ?>
 
 <!DOCTYPE html>
@@ -55,7 +65,7 @@ include('authentication.php');
     <label for="file2">Another file</label>
     <input type="file" name="file2" id="file2">
 
-    <button class ="btn-upload">Upload</button>
+    <button class ="btn-upload" name = "submit">Upload</button>
 
 </form>
         </div>
