@@ -3,6 +3,7 @@ require 'database/server.php';
 include('allcode.php');
 include('authentication.php');
 
+
 ?>
 
 <!DOCTYPE html>
@@ -43,7 +44,7 @@ include('authentication.php');
     </li>
  </ul>
    </nav>
-   
+   <!-- ENROLLMENT STILL NEED A WORK. Not DONE YET!! -->
         <div class="container">
 				<button type="button" name = "enroll_btn"><i class="fa fa-plus"></i> Enroll New Student</button>
 			
