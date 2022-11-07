@@ -17,7 +17,7 @@
     <ul>
     <li><a href ="Admin.php">Home</a></li>
 
-    <li><a href ="#">Communications</a>
+    <li><a href ="#">Communication</a>
     <ul>
       <li><a href = "AdminChat.php">Chat</a></li>
       <li><a href = "Calendar.php">Calendar</a></li>
