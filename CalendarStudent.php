@@ -43,7 +43,7 @@ include('authentication.php');
     </ul>
   </li>
   
-    <li><a href ="ViewStudentInfo.php">Students</a></li>
+    <li><a href ="ViewStudentInfo.php">Contacts</a></li>
     <li><a href ="Promotion.php">Uploads</a></li>
 
     <li>

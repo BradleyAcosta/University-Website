@@ -30,7 +30,7 @@ include('authentication.php');
     </ul>
   </li>
   
-    <li><a href ="ViewStudentInfo.php">Student</a></li>
+    <li><a href ="ViewStudentInfo.php">Contacts</a></li>
     <li><a href ="Promotion.php">Uploads</a></li>
 
     <li>
@@ -54,6 +54,7 @@ include('authentication.php');
   <th>First Name</th>
   <th>Email</th>
   <th>User Type</th>
+  <th>Phone Number</th>
  </tr>
 </thead>
 <tbody>

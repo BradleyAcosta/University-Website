@@ -56,6 +56,11 @@ require 'database/server.php';
   </select>
   </div>
 
+  <div class = "field input-field">
+      <input required type="text" name="phoneNumber" placeholder = "Phone Number" id = "Phone Number" required value=""> <br>
+	  </div>
+
+
 	  <div class = "field button-field">
 		<br>
       <button type="submit" name="register_btn">Register</button>

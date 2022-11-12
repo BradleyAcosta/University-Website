@@ -31,7 +31,7 @@ include('authentication.php');
     </ul>
   </li>
   
-    <li><a href ="ViewStudentInfo.php">Student</a></li>
+    <li><a href ="ViewStudentInfo.php">Contacts</a></li>
 	<li><a href ="Promotion.php">Uploads</a></li>
    
 
