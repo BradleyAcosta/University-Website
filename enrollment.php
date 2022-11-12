@@ -47,8 +47,8 @@ include('authentication.php');
    <!-- ENROLLMENT STILL NEED A WORK. Not DONE YET!! -->
    <div class = "container">
    <div class="card-header">
-<h4>Registered User
- <a href="register-add.php" class="btn-success">Add Admin</a>
+<h4>Enrollment 
+ <a href="enrollment-edit.php" class="btn-success">Enrollment Form</a>
  </h4>
  </div>
 			

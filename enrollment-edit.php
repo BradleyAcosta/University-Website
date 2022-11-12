@@ -18,14 +18,13 @@ include('authentication.php');
   </head>
   <body>
 
+  
 <div class="container">
-  <h1> Enrollment Information</h1>
+<div class="Table-class">
+  <h4> Enrollment Information
+  <a href="enrollment.php" class = "btn-delete">BACK</a>
+  </h4>
 
-
-  <div class="Table-class">
-  <h4>Add User/Admin
-  <a href="enrollment-edit.php" class="btn-success">Add Admin</a>
-     </h4>
 
      <form action="codeUpdate.php" method="POST">
 
