@@ -20,7 +20,6 @@ include('authentication.php');
 </head>
 <body>
 <nav>
-  <p>  Welcome to chat </p>
     <ul>
     <li><a href ="index.php">Home</a></li>
     <li><a href ="enrollment.php">Enrollment</a>
