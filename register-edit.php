@@ -100,6 +100,11 @@ include('authentication.php');
          <option value="0" <?= $user['Check'] == '0' ? 'selected':'' ?> >User</option>
          </select>
        <?php endif; ?>
+<br>
+       <label for="">Phone Number</label>
+         <br>
+         <input type="text" name="phoneNumber" value="<?=$user['phoneNumber'];?>" class="form-control">
+<br>  
                        
  
     <div class = "field-button">

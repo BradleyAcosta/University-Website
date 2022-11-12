@@ -79,7 +79,7 @@ include('authentication.php');
   echo 'User';
  }
 ?>
-
+ <td><?= $row['phoneNumber']; ?></td>
    </td>
   </tr>
   <?php

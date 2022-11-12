@@ -63,6 +63,7 @@ include('authentication.php');
   <th>Username</th>
   <th>Email</th>
   <th>UserType</th>
+  <th>Phone Number</th>
   <th>Edit</th>
   <th>Delete</th>
  </tr>
@@ -90,6 +91,7 @@ include('authentication.php');
   echo 'User';
  }
 ?>
+ <td><?= $row['phoneNumber']; ?></td>
 </td>
                                     
 <td>

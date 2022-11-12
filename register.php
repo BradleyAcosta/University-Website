@@ -57,7 +57,7 @@ require 'database/server.php';
   </div>
 
   <div class = "field input-field">
-      <input required type="text" name="phoneNumber" placeholder = "Phone Number" id = "Phone Number" required value=""> <br>
+      <input required type="text" name="phoneNumber" placeholder = "Phone Number" id = "phoneNumber" required value=""> <br>
 	  </div>
 
 

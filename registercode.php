@@ -9,6 +9,7 @@ if(isset($_POST["register_btn"])){
   $password = mysqli_real_escape_string($conn,$_POST["password"]);
   $confirmpassword = mysqli_real_escape_string($conn,$_POST["confirmpassword"]);
   $role_as = $_POST["Check"];
+  $phoneNumber = mysqli_real_escape_string($conn,$_POST["phoneNumber"]);
 
     if($password == $confirmpassword) {
         //check email
@@ -22,7 +23,7 @@ if(isset($_POST["register_btn"])){
             exit(0);
         }
         else {
-           $user_query = "INSERT INTO registration (name, username, email, password, `Check`) VALUES('$name', '$username', '$email', '$password', '$role_as') ";
+           $user_query = "INSERT INTO registration (name, username, email, password, `Check`, phoneNumber) VALUES('$name', '$username', '$email', '$password', '$role_as', '$phoneNumber') ";
            $user_query_run = mysqli_query($conn, $user_query);
 
            if($user_query_run)

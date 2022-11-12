@@ -53,8 +53,9 @@ if(isset($_POST['add_user'])) {
   $email = $_POST['email'];
   $password = $_POST['password'];
   $role_as = $_POST['Check'];
+  $phoneNumber = $_POST['phoneNumber'];
 
-  $query = "INSERT INTO registration (name, username, email, password, `Check`) VALUES ('$name', '$user_name', '$email','$password','$role_as')";
+  $query = "INSERT INTO registration (name, username, email, password, `Check`, phoneNumber) VALUES ('$name', '$user_name', '$email','$password','$role_as', '$phoneNumber')";
   $query_run = mysqli_query($conn, $query);
 
   if($query_run) 
@@ -79,10 +80,12 @@ if(isset($_POST['update_user']))
   $email = $_POST['email'];
   $password = $_POST['password'];
   $role_as = $_POST['Check'];
+  $phoneNumber = $_POST['phoneNumber'];
 
 
 
-  $query = "UPDATE registration SET name = '$name', username = '$user_name', email = '$email', password = '$password', `Check` ='$role_as'
+
+  $query = "UPDATE registration SET name = '$name', username = '$user_name', email = '$email', password = '$password', `Check` ='$role_as', phoneNumber = '$phoneNumber'
   WHERE id ='$user_id' ";
 
   $query_run = mysqli_query($conn, $query);
