@@ -56,6 +56,12 @@ include('authentication.php');
          <option value ="0">User</option>
          </select>
 
+         <br>
+       <label for="">Phone Number</label>
+         <br>
+         <input type="text" name="phoneNumber"  class="form-control">
+<br>  
+ 
                        
  
     <div class = "field-button">
