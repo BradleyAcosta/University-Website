@@ -49,7 +49,6 @@ if(isset($_POST['user_delete']))
 //Submit Enrollment
 if(isset($_POST['add_enrollment'])) {
 
-  $user_id = $_POST['user_id'];
   $firstName = $_POST['firstName'];
   $lastName = $_POST['lastName'];
   $Address = $_POST['Address'];
@@ -62,6 +61,7 @@ if(isset($_POST['add_enrollment'])) {
   $query = "INSERT INTO enrollment_info (firstName, lastName, Address, Age, `Sex`, academicProgram, homePhone, pastSchool  ) VALUES ('$firstName', '$lastName', '$Address',$Age','$Sex', '$Academic_Program',' $Home_Phone','$Past_School')";
   $query_run = mysqli_query($conn, $query);
   if($query_run) 
+  
   {
     $_SESSION['message'] = "Enrollment complete!!";
     header("Location: enrollment.php");

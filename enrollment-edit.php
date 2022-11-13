@@ -31,20 +31,20 @@ include('authentication.php');
     
            <label for="">First Name</label>
            <br>
-       <input type="text" name="firstName" value="<?=$user['firstName'];?>"  class="form-control">
+       <input type="text" name="firstName"   class="form-control">
 <br>
     <label for="">Last Name</label>
     <br>
-     <input type="text" name="lastName" value="<?=$user['lastName'];?>" class="form-control">
+     <input type="text" name="lastName"  class="form-control">
 <br>
    
       <label for="">Address</label>
       <br>
-      <input type="text" name="Address" value="<?=$user['Address'];?>" class="form-control">
+      <input type="text" name="Address"  class="form-control">
   <br>
          <label for="">Age</label>
          <br>
-         <input type="number" name="Age" value="<?=$user['Age'];?>" class="form-control">
+         <input type="number" name="Age"  class="form-control">
 <br>
   
 <label for="">Sex</label>
@@ -52,10 +52,10 @@ include('authentication.php');
     <br>
     <br>
     
-  <select class = "Sex" name = "Sex" required value = "">
+  <select class = "Sex" name = "Sex">
     <option value = ""> --Select--</option>
-    <option value = "Male" <?= $user['Sex'] == 'Male' ? 'selected':'' ?> > Male</option>
-    <option value = "Female"<?= $user['Sex'] == 'Female' ? 'selected':'' ?> > Female</option>
+    <option value = "Male"> Male</option>
+    <option value = "Female"> Female</option>
   </select>
         
   <br>
@@ -64,18 +64,18 @@ include('authentication.php');
          <br>
        <label for="">Academic Program</label>
          <br>
-         <input type="text" name="academicProgram"  value="<?=$user['academicProgram'];?>"  class="form-control">
+         <input type="text" name="academicProgram"    class="form-control">
 <br>  
  
 <label for="">Home Phone</label>
       <br>
-      <input type="text" name="homePhone" value="<?=$user['homePhone'];?>"  class="form-control">
+      <input type="text" name="homePhone"  class="form-control">
 
       <br>
 
       <label for="">Past School</label>
       <br>
-      <input type="text" name="pastSchool"  value="<?=$user['past`````'];?>" class="form-control">
+      <input type="text" name="pastSchool"   class="form-control">
                        
  
     <div class = "field-button">
