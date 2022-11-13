@@ -28,43 +28,58 @@ include('authentication.php');
 
      <form action="codeUpdate.php" method="POST">
 
-      
+    
            <label for="">First Name</label>
            <br>
-       <input type="text" name="name"  class="form-control">
+       <input type="text" name="firstName" value="<?=$user['firstName'];?>"  class="form-control">
 <br>
-    <label for="">Username</label>
+    <label for="">Last Name</label>
     <br>
-     <input type="text" name="username" class="form-control">
+     <input type="text" name="lastName" value="<?=$user['lastName'];?>" class="form-control">
 <br>
    
-      <label for="">Email Address</label>
+      <label for="">Address</label>
       <br>
-      <input type="text" name="email"  class="form-control">
+      <input type="text" name="Address" value="<?=$user['Address'];?>" class="form-control">
   <br>
-         <label for="">Password</label>
+         <label for="">Age</label>
          <br>
-         <input type="text" name="password"  class="form-control">
+         <input type="number" name="Age" value="<?=$user['Age'];?>" class="form-control">
 <br>
   
-         <label for="">Role as</label>
-         <br>
-         <select name="Check" required class="form-control">
-          <option value ="">--Select Role--</option>
-          <option value ="1">Admin</option>
-         <option value ="0">User</option>
-         </select>
+<label for="">Sex</label>
+
+    <br>
+    <br>
+    
+  <select class = "Sex" name = "Sex" required value = "">
+    <option value = ""> --Select--</option>
+    <option value = "Male" <?= $user['Sex'] == 'Male' ? 'selected':'' ?> > Male</option>
+    <option value = "Female"<?= $user['Sex'] == 'Female' ? 'selected':'' ?> > Female</option>
+  </select>
+        
+  <br>
+  <br>
 
          <br>
-       <label for="">Phone Number</label>
+       <label for="">Academic Program</label>
          <br>
-         <input type="text" name="phoneNumber"  class="form-control">
+         <input type="text" name="academicProgram"  value="<?=$user['academicProgram'];?>"  class="form-control">
 <br>  
  
+<label for="">Home Phone</label>
+      <br>
+      <input type="text" name="homePhone" value="<?=$user['homePhone'];?>"  class="form-control">
+
+      <br>
+
+      <label for="">Past School</label>
+      <br>
+      <input type="text" name="pastSchool"  value="<?=$user['past`````'];?>" class="form-control">
                        
  
     <div class = "field-button">
-    <button type="submit" name="add_user">Add User/Admin</button>
+    <button type="submit" name="add_enrollment">Submit!</button>
     </div>
 
      </form>

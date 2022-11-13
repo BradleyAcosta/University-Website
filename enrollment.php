@@ -51,30 +51,7 @@ include('authentication.php');
  <a href="enrollment-edit.php" class="btn-success">Enrollment Form</a>
  </h4>
  </div>
-			
-			<br>
-				<table class="Table-class">
-					<thead>
-						<tr>
-							<th>#</th>
-							<th>Name</th>
-							<th>Level Section</th>
-							<th>Adviser</th>
-							<th>Student Type</th>
-							<th>Action</th>
-						</tr>
-					</thead>
-					<tbody>
-						
-					</tbody>
-				</table>
-			</div>
-			
 		</div>
-	</div>
-</div>
-	
-</div>
-</div>
+
 </body>
 </html>

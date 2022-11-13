@@ -10,6 +10,8 @@ include('authentication.php');
     <meta charset="utf-8">
 
     <link rel="stylesheet" href="CSS/Admin.css">
+    <link rel="stylesheet" href="CSS/Table.css">
+
 
     
 
@@ -43,6 +45,35 @@ include('authentication.php');
    <div class="container">
    <p><?php include('message.php'); //Display any error on succeed Message?></p>
    
+   <div class = "container">
+   <div class="card-header">
+<h4>Students Already Enrolled <br><br>
+Enrollment:
+
+</h4>
+ </div>
+				<table class="Table-class">
+					<thead>
+						<tr>
+							<th>#</th>
+							<th>First Name</th>
+							<th>Last Name</th>
+							<th>Address</th>
+							<th>Age</th>
+              <th>Sex</th>
+							<th>Academic Program</th>
+              <th>Home phone</th>
+              <th>Past School</th>
+            
+						</tr>
+					</thead>
+					<tbody>
+						
+					</tbody>
+				</table>
+			</div>
+			
+		</div>
 
 
   </body>
