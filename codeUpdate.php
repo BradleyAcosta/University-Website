@@ -52,13 +52,13 @@ if(isset($_POST['add_enrollment'])) {
   $firstName = $_POST['firstName'];
   $lastName = $_POST['lastName'];
   $Address = $_POST['Address'];
-  $Age = $_POST['Age'];
-  $Sex = $_POST['Sex'];
-  $Academic_Program = $_POST['academicProgram'];
-  $Home_Phone = $_POST['homePhone'];
-  $Past_School = $_POST['pastSchool'];
+  // $Age = $_POST['Age'];
+  // $Sex = $_POST['Sex'];
+  // $Academic_Program = $_POST['academicProgram'];
+  // $Home_Phone = $_POST['homePhone'];
+  // $Past_School = $_POST['pastSchool'];
   
-  $query = "INSERT INTO enrollment_info (firstName, lastName, Address, Age, `Sex`, academicProgram, homePhone, pastSchool  ) VALUES ('$firstName', '$lastName', '$Address',$Age','$Sex', '$Academic_Program',' $Home_Phone','$Past_School')";
+  $query = "INSERT INTO enrollment_info (firstName, lastName, Address ) VALUES ('$firstName', '$lastName', '$Address')";
   $query_run = mysqli_query($conn, $query);
   if($query_run) 
   

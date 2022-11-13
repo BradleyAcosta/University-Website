@@ -42,7 +42,8 @@ include('authentication.php');
       <label for="">Address</label>
       <br>
       <input type="text" name="Address"  class="form-control">
-  <br>
+      
+  <!-- <br>
          <label for="">Age</label>
          <br>
          <input type="number" name="Age"  class="form-control">
@@ -76,7 +77,7 @@ include('authentication.php');
 
       <label for="">Past School</label>
       <br>
-      <input type="text" name="pastSchool"   class="form-control">
+      <input type="text" name="pastSchool"   class="form-control"> -->
                        
  
     <div class = "field-button">

@@ -43,8 +43,6 @@ include('authentication.php');
     
     </ul>
    </nav>
-
-
    <div class="container">
 <?php    include('message.php'); ?>
 

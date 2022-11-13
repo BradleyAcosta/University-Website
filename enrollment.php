@@ -46,6 +46,7 @@ include('authentication.php');
    </nav>
    <!-- ENROLLMENT STILL NEED A WORK. Not DONE YET!! -->
    <div class = "container">
+   <p><?php include('message.php'); //Display any error on succeed Message?></p>
    <div class="card-header">
 <h4>Enrollment 
  <a href="enrollment-edit.php" class="btn-success">Enrollment Form</a>

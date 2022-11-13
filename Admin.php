@@ -69,7 +69,28 @@ Enrollment:
 						</tr>
 					</thead>
 					<tbody>
-						
+          
+          <?php
+      $query = "SELECT * FROM enrollment_info";
+      $query_run = mysqli_query($conn, $query);
+
+ if(mysqli_num_rows($query_run) > 0)
+  {
+  foreach($query_run as $row)
+  {
+  ?>
+  <tr>
+  <td><?= $row['id']; ?></td>
+  <td><?= $row['firstName']; ?></td>
+   <td><?= $row['lastName']; ?></td>
+   <td><?= $row['Address']; ?></td>
+     <td>
+ <td><?= $row['Age']; ?></td>
+</td>
+  		<?php
+  }
+}
+      ?>
 					</tbody>
 				</table>
 			</div>
