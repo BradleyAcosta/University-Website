@@ -13,9 +13,6 @@ include('authentication.php');
     <link rel="stylesheet" href="CSS/Admin.css">
     <link rel="stylesheet" href="CSS/Table.css">
 
-
-    
-
     <title>Admin dashboard</title>
   </head>
   <body>
@@ -46,12 +43,12 @@ include('authentication.php');
    <div class="container">
    <p><?php include('message.php'); //Display any error on succeed Message?></p>
    
-   <div class = "container">
-   <div class="card-header">
-<h4>Students Already Enrolled <br><br>
-Enrollment:
 
-</h4>
+   <div class="card-header">
+<h2>Students Already Enrolled <br><br>
+<h4>Enrollment:</h4>
+
+</h2>
  </div>
 				<table class="Table-class">
 					<thead>
@@ -65,6 +62,8 @@ Enrollment:
 							<th>Academic Program</th>
               <th>Home phone</th>
               <th>Past School</th>
+              <th>Edit</th>
+              <th> Delete</th>
             
 						</tr>
 					</thead>
@@ -84,8 +83,20 @@ Enrollment:
   <td><?= $row['firstName']; ?></td>
    <td><?= $row['lastName']; ?></td>
    <td><?= $row['Address']; ?></td>
-     <td>
- <td><?= $row['Age']; ?></td>
+   <td><?= $row['Age']; ?></td>
+ <td><?= $row['Sex']; ?></td>
+ <td><?= $row['academicProgram']; ?></td>
+ <td><?= $row['homePhone']; ?></td>
+ <td><?= $row['pastSchool']; ?></td>
+ <td>
+<a href="enrollment-edit.php" class="btn-success">Edit</a>
+</td>
+
+ <td>
+  <form action ="codeUpdate.php" method="POST">  
+    
+  <button type="submit" name = "user_delete" value= "<?= $row['id']; ?>" class = "btn-delete">Delete</button>
+  </td>
 </td>
   		<?php
   }
@@ -95,7 +106,7 @@ Enrollment:
 				</table>
 			</div>
 			
-		</div>
+
 
 
   </body>
