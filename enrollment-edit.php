@@ -46,7 +46,7 @@ include('authentication.php');
    <br>
          <label for="">Age</label>
          <br>
-         <input type="number" name="Age"  class="form-control">
+         <input type="text" name="Age"  class="form-control">
 <br>
   
  <label for="">Sex</label>
