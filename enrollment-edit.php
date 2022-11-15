@@ -44,23 +44,18 @@ include('authentication.php');
       <input type="text" name="Address"  class="form-control">
 
    <br>
-         <label for="">Age</label>
+         <label for="">Date of Birth</label>
          <br>
-         <input type="text" name="Age"  class="form-control">
+         <input type="date" name="Age"  class="form-control">
 <br>
   
- <label for="">Sex</label>
+ <label for="">Gender</label>
+ <br>
+ <br>
+ <input type = "radio" name = "Sex" value = "Male"/>Male
+ <input type = "radio" name = "Sex" value = "Female"/>Female
 
-    <br>
-    <br>
-    
-  <select class = "Sex" name = "Sex">
-    <option value = ""> --Select--</option>
-    <option value = "Male"> Male</option>
-    <option value = "Female"> Female</option>
-  </select>
-        
-  <br>
+ <br>
   <br>
 
          <br>
