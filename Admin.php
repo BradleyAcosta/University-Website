@@ -97,10 +97,21 @@ include('authentication.php');
   		<?php
   }
 }
-      ?>
+else 
+{
+
+
+?>
+    <tr>
+    <td colspan="6">No Record Found</td>
+    </tr>
+     <?php
+     }
+    ?>
 					</tbody>
 				</table>
 			</div>
+      
 			
 
 

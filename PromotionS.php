@@ -55,7 +55,7 @@ include('authentication.php');
 
     <button class ="btn-upload" name = "submit">Upload</button>
 
-    <table id="myDataTable" class="Table-class">
+    <table class="Table-class">
   <thead>
   <tr>
  <th>ID</th>
@@ -80,7 +80,7 @@ include('authentication.php');
   <form action ="codeUpdate.php" method="POST">  
     
   <button type="submit" name = "Image_delete" value= "<?= $row['id']; ?>" class = "btn-delete">Delete</button>
-  </td>
+
   </form>
   </tr>
   <?php
