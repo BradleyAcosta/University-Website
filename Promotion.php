@@ -57,19 +57,26 @@ include('authentication.php');
     
        
         $query = " select * from image ";
-        $result = mysqli_query($conn, $query);
- 
-        while ($data = mysqli_fetch_assoc($result)) {
+        $query_run = mysqli_query($conn, $query);
+
+        if(mysqli_num_rows($query_run) > 0)
+      {
+        while ($data = mysqli_fetch_assoc($query_run)) {
     ?>
-        <img src="./image/<?php echo $data['image_url']; ?>">
+        <img src="./image/<?php echo $data['filename']; ?>">
  
     <?php
         }
+      }
+      else 
+        {
     ?>
     <tr>
     <td colspan="6">No Record Found</td>
     </tr>
-
+    <?php
+        }
+      ?>
    </div>  
 </body>
 </html>

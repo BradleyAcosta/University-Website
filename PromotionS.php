@@ -54,7 +54,7 @@ include('authentication.php');
    
 
     <!-- <input type="hidden" name="MAX_FILE_SIZE" value="1048576"> -->
-    <form action ="codeUpdate.php" method="POST">
+    <form action ="codeUpdate.php" method="POST" enctype="multipart/form-data">
 
     <label for="image">Image file</label>
     <input type="file"  name="uploadfile">
