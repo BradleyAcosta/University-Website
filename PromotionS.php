@@ -12,9 +12,11 @@ include('authentication.php');
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="CSS/Table.css">
-  <link rel="stylesheet" href="CSS/index.css">
+  <link rel="stylesheet" href="CSS/Table.css">
     <link rel="stylesheet" href="CSS/Admin.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+
 
 	<title>Uploads</title>
 </head>
@@ -55,7 +57,7 @@ include('authentication.php');
     <form action ="codeUpdate.php" method="POST">
 
     <label for="image">Image file</label>
-    <input type="file"  name="image_url">
+    <input type="file"  name="uploadfile">
 
   
     <table class="Table-class">
@@ -67,12 +69,13 @@ include('authentication.php');
  </tr>
 </thead>
 <tbody>
+
 <div class="field-button">
     <button type = "submit" name = "submit_img">Upload</button>
     </div>
 
 <?php // Get Student information from database
- $query = "SELECT * FROM images";
+ $query = "SELECT * FROM image";
  $query_run = mysqli_query($conn, $query);
 
  if(mysqli_num_rows($query_run) > 0)
@@ -82,7 +85,7 @@ include('authentication.php');
   ?>
   <tr>
   <td><?= $row['id']; ?></td>
-  <td><?= $row['image_url']; ?></td>
+  <td><?= $row['filename']; ?></td>
 <td>              
     
   <button type="submit" name = "Image_delete" value= "<?= $row['id']; ?>" class = "btn-delete">Delete</button>

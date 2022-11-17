@@ -48,34 +48,29 @@ include('authentication.php');
    
         <div class="container">
           <h2>University Promotions/News :</h2>
+       
           <br>
           <br>
 
         <?php 
         //ADDED DATA BASE IMAGE FROM ADMIN TO STUDENT
-          $query = "SELECT * FROM images ORDER BY id DESC";
-          $query_run = mysqli_query($conn, $query);
-
-          if (mysqli_num_rows($query_run) > 0) 
-          {
-            while($images = mysqli_fetch_assoc($query_run)) { ?>    
-         <tr>
-         <td> <img src= <? $row["images_url"];?>> </td>
-          		
+    
+       
+        $query = " select * from image ";
+        $result = mysqli_query($conn, $query);
+ 
+        while ($data = mysqli_fetch_assoc($result)) {
+    ?>
+        <img src="./image/<?php echo $data['image_url']; ?>">
+ 
     <?php
-
-  }
-   }
-   else {
+        }
     ?>
     <tr>
     <td colspan="6">No Record Found</td>
     </tr>
-     <?php
-     }
-    ?>
-  
-      
+
+   </div>  
 </body>
 </html>
       

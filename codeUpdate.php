@@ -6,23 +6,28 @@ include('authentication.php');
 //Submit images from Admin to Student
 if(isset($_POST['submit_img']))
 {
-  $upload = $_POST['image_url'];
+  $filename = $_FILES["uploadfile"]["name"];
+  $tempname = $_FILES["uploadfile"]["tmp_name"];
+  $folder = "./image/" . $filename;
 
- $query = 'INSERT INTO `images` (`image_url`) VALUES ("'.$upload.'")';
-  $query_run = mysqli_query($conn, $query);
-  if($query_run) 
-  
-  {
-    $_SESSION['message'] = "Image/Video Added Successfully!!";
+  // Get all the submitted data from the form
+  $sql = "INSERT INTO image (filename) VALUES ('$filename')";
+
+  // Execute query
+  $query_run = mysqli_query($conn, $sql);
+
+  // Now let's move the uploaded image into the folder: image
+  if (move_uploaded_file($tempname, $folder)) {
+    $_SESSION['message'] = "Image uploaded successfully!";
     header("Location: PromotionS.php");
     exit(0);
   } else {
     $_SESSION['message'] = "An error occurred";
     header("Location : PromotionS.php");
    exit(0);
+  }
+}
 
-}
-}
   
 
 //Delete Images From Admin
@@ -30,7 +35,7 @@ if(isset($_POST['Image_delete']))
 {
   $user_id = $_POST['Image_delete'];
 
-  $query = "DELETE FROM images WHERE id = '$user_id' ";
+  $query = "DELETE FROM image WHERE id = '$user_id' ";
   $query_run = mysqli_query($conn, $query);
 
   if($query_run) 

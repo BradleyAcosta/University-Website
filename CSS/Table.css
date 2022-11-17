@@ -89,7 +89,7 @@ label {
     background-color:rgb(78, 78, 240);
     color: white;
     transition-duration: 0.4s;
-   width: 50px;
+   width: 12%;
 
 }.field-button:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);

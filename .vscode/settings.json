@@ -6,7 +6,9 @@
         "getweeks",
         "logincode",
         "registercode",
-        "servername"
+        "servername",
+        "tempname",
+        "uploadfile"
     ],
     "cSpell.words": [
         "usernameemail"
