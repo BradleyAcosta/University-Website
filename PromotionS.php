@@ -14,7 +14,7 @@ include('authentication.php');
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="CSS/Table.css">
     <link rel="stylesheet" href="CSS/Admin.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
 
 
 
@@ -48,6 +48,8 @@ include('authentication.php');
    </nav>
    
         <div class="container">
+        <?php    include('message.php'); ?>
+
     <h2> Add Images or videos for further Updates for the University</h2>
     <br>
     <br>
