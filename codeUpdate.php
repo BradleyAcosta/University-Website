@@ -3,6 +3,28 @@ require 'database/server.php';
 include('allcode.php');
 include('authentication.php');
 
+//Submit images from Admin to Student
+if(isset($_POST['submit_img']))
+{
+  $upload = $_POST['image_url'];
+
+ $query = 'INSERT INTO `images` (`image_url`) VALUES ("'.$upload.'")';
+  $query_run = mysqli_query($conn, $query);
+  if($query_run) 
+  
+  {
+    $_SESSION['message'] = "Image/Video Added Successfully!!";
+    header("Location: PromotionS.php");
+    exit(0);
+  } else {
+    $_SESSION['message'] = "An error occurred";
+    header("Location : PromotionS.php");
+   exit(0);
+
+}
+}
+  
+
 //Delete Images From Admin
 if(isset($_POST['Image_delete']))
 {

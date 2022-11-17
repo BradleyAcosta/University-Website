@@ -13,7 +13,9 @@ include('authentication.php');
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="CSS/Table.css">
+  <link rel="stylesheet" href="CSS/index.css">
     <link rel="stylesheet" href="CSS/Admin.css">
+
 	<title>Uploads</title>
 </head>
 <body>
@@ -47,14 +49,15 @@ include('authentication.php');
     <h2> Add Images or videos for further Updates for the University</h2>
     <br>
     <br>
-    <form method="post" enctype="multipart/form-data" action="upload.php">
+   
 
     <!-- <input type="hidden" name="MAX_FILE_SIZE" value="1048576"> -->
+    <form action ="codeUpdate.php" method="POST">
+
     <label for="image">Image file</label>
-    <input type="file" id="image" name="my_image">
+    <input type="file"  name="image_url">
 
-    <button class ="btn-upload" name = "submit">Upload</button>
-
+  
     <table class="Table-class">
   <thead>
   <tr>
@@ -64,6 +67,10 @@ include('authentication.php');
  </tr>
 </thead>
 <tbody>
+<div class="field-button">
+    <button type = "submit" name = "submit_img">Upload</button>
+    </div>
+
 <?php // Get Student information from database
  $query = "SELECT * FROM images";
  $query_run = mysqli_query($conn, $query);
@@ -76,12 +83,10 @@ include('authentication.php');
   <tr>
   <td><?= $row['id']; ?></td>
   <td><?= $row['image_url']; ?></td>
-<td>            
-  <form action ="codeUpdate.php" method="POST">  
+<td>              
     
   <button type="submit" name = "Image_delete" value= "<?= $row['id']; ?>" class = "btn-delete">Delete</button>
 
-  </form>
   </tr>
   <?php
   } 
@@ -95,7 +100,7 @@ include('authentication.php');
      <?php
      }
     ?>
-                              
+           </form>                   
    </tbody>
    </table>
   </div>
