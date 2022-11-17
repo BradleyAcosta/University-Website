@@ -51,7 +51,6 @@ include('authentication.php');
   <table id="myDataTable" class="Table-class">
   <thead>
   <tr>
- <th>ID</th>
   <th>First Name</th>
   <th>Email</th>
   <th>User Type</th>
@@ -69,7 +68,6 @@ include('authentication.php');
   {
   ?>
   <tr>
-  <td><?= $row['id']; ?></td>
   <td><?= $row['name']; ?></td>
    <td><?= $row['email']; ?></td>
      <td>

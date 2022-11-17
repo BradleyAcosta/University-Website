@@ -53,17 +53,28 @@ include('authentication.php');
 
         <?php 
         //ADDED DATA BASE IMAGE FROM ADMIN TO STUDENT
-          $sql = "SELECT * FROM images ORDER BY id DESC";
-          $res = mysqli_query($conn,  $sql);
+          $query = "SELECT * FROM images ORDER BY id DESC";
+          $query_run = mysqli_query($conn, $query);
 
-          if (mysqli_num_rows($res) > 0) {
-          	while ($images = mysqli_fetch_assoc($res)) {  ?>
-             
-             <div class="alb">
-             	<img src="uploads/<?=$images['image_url']?>">
-             </div>
+          if (mysqli_num_rows($query_run) > 0) 
+          {
+            while($images = mysqli_fetch_assoc($query_run)) { ?>    
+         <tr>
+         <td> <img src= <? $row["images_url"];?>> </td>
           		
-    <?php } }?>
+    <?php
+
+  }
+   }
+   else {
+    ?>
+    <tr>
+    <td colspan="6">No Record Found</td>
+    </tr>
+     <?php
+     }
+    ?>
+  
       
 </body>
 </html>
