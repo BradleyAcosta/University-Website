@@ -57,13 +57,12 @@ include('authentication.php');
 							<th>First Name</th>
 							<th>Last Name</th>
 							<th>Address</th>
-							<th>Age</th>
+							<th>Date of birth</th>
               <th>Sex</th>
 							<th>Academic Program</th>
               <th>Home phone</th>
               <th>Past School</th>
-              <th>Edit</th>
-              <th> Delete</th>
+              <th>Delete</th>
             
 						</tr>
 					</thead>
@@ -88,14 +87,11 @@ include('authentication.php');
  <td><?= $row['academicProgram']; ?></td>
  <td><?= $row['homePhone']; ?></td>
  <td><?= $row['pastSchool']; ?></td>
- <td>
-<a href="enrollment-edit.php" class="btn-success">Edit</a>
-</td>
 
  <td>
   <form action ="codeUpdate.php" method="POST">  
     
-  <button type="submit" name = "user_delete" value= "<?= $row['id']; ?>" class = "btn-delete">Delete</button>
+  <button type="submit" name = "user_deleted" value= "<?= $row['id']; ?>" class = "btn-delete">Delete</button>
   </td>
 </td>
   		<?php

@@ -63,12 +63,32 @@ if(isset($_POST['add_enrollment'])) {
   if($query_run) 
   
   {
-    $_SESSION['message'] = "Enrollment complete!!";
+    $_SESSION['message'] = "Enrollment completed!!";
     header("Location: enrollment.php");
     exit(0);
   } else {
     $_SESSION['message'] = "An error occurred";
     header("Location : enrollment.php");
+   exit(0);
+
+}
+}
+//Delete Enrollment Student
+if(isset($_POST['user_deleted']))
+{
+  $user_id = $_POST['user_deleted'];
+
+  $query = "DELETE FROM enrollment_info WHERE id = '$user_id' ";
+  $query_run = mysqli_query($conn, $query);
+
+  if($query_run) 
+  {
+    $_SESSION['message'] = "Student Enrollment Deleted Successfully";
+    header("Location: Admin.php");
+    exit(0);
+  } else {
+    $_SESSION['message'] = "An error occurred";
+    header("Location : Admin.php");
    exit(0);
 
 }
