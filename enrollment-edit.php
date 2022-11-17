@@ -41,7 +41,7 @@ include('authentication.php');
    
       <label for="">Address</label>
       <br>
-      <input type="text" name="Address"  class="form-control">
+      <input type="text" name="address"  class="form-control">
 
    <br>
          <label for="">Date of Birth</label>

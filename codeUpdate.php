@@ -51,7 +51,7 @@ if(isset($_POST['add_enrollment'])) {
 
   $firstName = $_POST['firstName'];
   $lastName = $_POST['lastName'];
-  $address = $_POST['Address'];
+  $Address = $_POST['address'];
   $Age = $_POST['Age'];
   $Sex = $_POST['Sex'];
   $Academic_Program = $_POST['academicProgram'];
