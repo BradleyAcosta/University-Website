@@ -64,7 +64,8 @@ include('authentication.php');
     ?>
           
         <img src="./image/<?php echo $data['filename']; ?>">
-    
+    <br>
+    <br>
     <?php
         }
       }

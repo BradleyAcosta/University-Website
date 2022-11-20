@@ -100,8 +100,15 @@ include('authentication.php');
 
 
    ?> 
-    
-    <table class="Table-class">
+    <tr>
+    <td colspan="6">No Record Found</td>
+    </tr>
+     <?php
+     }
+    ?>
+
+
+<table class="Table-class">
   <thead>
   <tr>
  <th>ID</th>
@@ -140,16 +147,7 @@ include('authentication.php');
   <?php
   } 
    }
-   else
-   {
-    ?>
-    <tr>
-    <td colspan="6">No Record Found</td>
-    </tr>
-     <?php
-     }
-    }
-    ?>
+?>
            </form>                   
    </tbody>
    </table>
