@@ -145,30 +145,45 @@ label {
 }
 
 
+/*=========================================================================================================*/
+/*=========================================================================================================*/
+
+/* Extra small devices (phones, 600px and down) */
 @media screen and (max-width: 700px) {
-    
-    .Table-class th,
-    .Table-class td {
-    width: 46%;
-   } 
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media screen and (min-width: 400px) {
- 
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media screen and (min-width: 768px) {
-
-} 
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media screen and (min-width: 992px) {
-
-} 
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media screen and (min-width: 1200px) {
-
-}
+    .container {
+        width: 200%;
+    }
+   
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media screen and (min-width: 400px) {
+    .container {
+        width: 200%;
+    }
+   
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media screen and (min-width: 768px) {
+    .container {
+        width: 200%;
+    }
+   
+  } 
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media screen and (min-width: 992px) {
+    .container {
+        width: 200%;
+    }
+   
+  } 
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media screen and (min-width: 1200px) {
+    .container {
+        width: 200%;
+    }
+   
+  }

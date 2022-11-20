@@ -92,30 +92,44 @@ img{
     width: 640px;
     height: 360px
 }
-  /*=========================================================================================================*/
+/*=========================================================================================================*/
 /*=========================================================================================================*/
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    .example {background: red;}
+@media screen and (max-width: 700px) {
+    .container {
+        width: 200%;
+    }
+   
   }
   
   /* Small devices (portrait tablets and large phones, 600px and up) */
-  @media only screen and (min-width: 600px) {
-  
+  @media screen and (min-width: 400px) {
+    .container {
+        width: 200%;
+    }
   }
   
   /* Medium devices (landscape tablets, 768px and up) */
-  @media only screen and (min-width: 768px) {
-    
+  @media screen and (min-width: 768px) {
+    .container {
+        width: 200%;
+    }
+   
   } 
   
   /* Large devices (laptops/desktops, 992px and up) */
-  @media only screen and (min-width: 992px) {
-    
+  @media screen and (min-width: 992px) {
+    .container {
+        width: 200%;
+    }
+  
   } 
   
   /* Extra large devices (large laptops and desktops, 1200px and up) */
-  @media only screen and (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
+    .container {
+        width: 200%;
+    }
     
   }

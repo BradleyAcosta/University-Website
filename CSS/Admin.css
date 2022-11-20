@@ -18,7 +18,9 @@ body {
     padding-top: 10%;
     background-position: right center; 
     width: 100%;
+
     height: fit-content;
+   
 }
 h1 {
     font-size: 50px;
@@ -88,15 +90,17 @@ nav ul li:hover ul {
 nav ul li ul li {
  width: 100px;
  border-radius: 1px;
-
 }
 nav ul li ul li a{
     padding: 8px 14px;
+
+
 }
 
 nav ul li ul li a:hover{
     background-color: rgb(78, 78, 240);
    
+
 }
 
 .Logout {
