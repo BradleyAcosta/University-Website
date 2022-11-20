@@ -13,7 +13,8 @@ include('authentication.php');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="CSS/Chat.css">
-    <link rel="stylesheet" href="CSS/Calendar.css"
+    <link rel="stylesheet" href="CSS/Calendar.css">
+    <link rel="stylesheet" href="CSS/Admin.css">
 
 
 
@@ -23,8 +24,6 @@ include('authentication.php');
 <nav>
     <ul>
     <li><a href ="index.php">Home</a></li>
-    <li><a href ="enrollment.php">Enrollment</a>
-
     <li><a href ="#">Communication</a>
     <ul>
       <li><a href = "StudentChat.php">Chat</a></li>

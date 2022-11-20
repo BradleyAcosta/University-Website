@@ -24,6 +24,7 @@ include('authentication.php');
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.js"></script>
 <link rel="stylesheet" href="CSS/Calendar.css">
+<link rel="stylesheet" href="CSS/Admin.css">
 
 
 
@@ -34,8 +35,6 @@ include('authentication.php');
 <nav>
     <ul>
     <li><a href ="index.php">Home</a></li>
-    <li><a href ="enrollment.php">Enrollment</a>
-
     <li><a href ="#">Communication</a>
     <ul>
       <li><a href = "StudentChat.php">Chat</a></li>

@@ -91,11 +91,11 @@ if(isset($_POST['add_enrollment'])) {
   
   {
     $_SESSION['message'] = "Enrollment completed!!";
-    header("Location: enrollment.php");
+    header("Location: index.php");
     exit(0);
   } else {
     $_SESSION['message'] = "An error occurred";
-    header("Location : enrollment.php");
+    header("Location : index.php");
    exit(0);
 
 }

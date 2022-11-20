@@ -13,6 +13,7 @@ include('authentication.php');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/Table.css">
     <link rel="stylesheet" href="CSS/Admin.css">
 
     <title>Index</title>
@@ -22,8 +23,6 @@ include('authentication.php');
    <nav>
     <ul>
     <li><a href ="index.php">Home</a></li>
-    <li><a href ="enrollment.php">Enrollment</a>
-
     <li><a href ="#">Communication</a>
     <ul>
       <li><a href = "StudentChat.php">Chat</a></li>
@@ -46,8 +45,17 @@ include('authentication.php');
    </nav>
 
    <div class="container">
-   <p><?php include('message.php'); //Display any error on succeed Message?></p>
 
+   <p><?php include('message.php'); //Display any error on succeed Message?></p>
+   <div class="card-header">
+<h4>Enrollment 
+ <a href="enrollment-edit.php" class="btn-success">Enrollment Form</a>
+ </h4>
+ </div>
+		</div>
+
+</body>
+</html>
          
   </body>
 </html>

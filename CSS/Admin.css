@@ -9,7 +9,7 @@ body {
 
 
 .container {
-    background: white;
+    background: rgb(224, 216, 216);
     padding: 30px;
     border-radius: 6px;
     margin-top: 20px;
@@ -17,6 +17,9 @@ body {
     padding-bottom: 30%;
     padding-top: 10%;
     background-position: right center; 
+    width: 100%;
+
+    height: fit-content;
    
 }
 h1 {

@@ -23,8 +23,6 @@ include('authentication.php');
    <nav>
     <ul>
     <li><a href ="index.php">Home</a></li>
-    <li><a href ="enrollment.php">Enrollment</a>
-
     <li><a href ="#">Communication</a>
     <ul>
       <li><a href = "StudentChat.php">Chat</a></li>
