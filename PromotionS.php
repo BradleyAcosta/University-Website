@@ -66,7 +66,7 @@ include('authentication.php');
   <thead>
   <tr>
  <th>ID</th>
-  <th>Images</th>
+  <th>Images/Videos</th>
   <th>Delete</th>
  </tr>
 </thead>

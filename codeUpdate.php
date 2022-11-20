@@ -10,6 +10,7 @@ if(isset($_POST['submit_img']))
   $tempname = $_FILES["uploadfile"]["tmp_name"];
   $folder = "./image/" . $filename;
 
+
   // Get all the submitted data from the form
   $sql = "INSERT INTO image (filename) VALUES ('$filename')";
 

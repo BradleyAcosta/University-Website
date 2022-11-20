@@ -62,7 +62,12 @@ include('authentication.php');
       {
         while ($data = mysqli_fetch_assoc($query_run)) {
     ?>
+
         <img src="./image/<?php echo $data['filename']; ?>">
+        <video src="./image/<?php echo $data['filename']; ?>"
+          controls>
+
+        </video>
  
     <?php
         }
