@@ -10,11 +10,10 @@ if(isset($_POST['submit_img']))
   $tempname = $_FILES["uploadfile"]["tmp_name"];
   $folder = "./image/" . $filename;
 
-
   // Get all the submitted data from the form
   $sql = "INSERT INTO image (filename) VALUES ('$filename')";
 
-  // Execute query
+
   $query_run = mysqli_query($conn, $sql);
 
   // Now let's move the uploaded image into the folder: image
@@ -29,7 +28,8 @@ if(isset($_POST['submit_img']))
   }
 }
 
-  
+
+
 
 //Delete Images From Admin
 if(isset($_POST['Image_delete']))
@@ -37,6 +37,53 @@ if(isset($_POST['Image_delete']))
   $user_id = $_POST['Image_delete'];
 
   $query = "DELETE FROM image WHERE id = '$user_id' ";
+  $query_run = mysqli_query($conn, $query);
+
+  if($query_run) 
+  {
+    $_SESSION['message'] = "Admin/user Deleted Successfully";
+    header("Location: PromotionS.php");
+    exit(0);
+  } else {
+    $_SESSION['message'] = "An error occurred";
+    header("Location : PromotionS.php");
+   exit(0);
+
+}
+}
+
+//Add Videos for User
+if(isset($_POST['submit_video']))
+{
+  $videoname = $_FILES["videoName"]["name"];
+  $tempAname = $_FILES["videoName"]["tmp_name"];
+  $Folder = "./video/" . $videoname;
+
+
+  // Get all the submitted data from the form
+  $sql = "INSERT INTO videos (videoname) VALUES ('$videoname')";
+
+
+  $query_run = mysqli_query($conn, $sql);
+
+  // Now let's move the uploaded image into the folder: image
+  if (move_uploaded_file($tempAname, $Folder)) {
+    $_SESSION['message'] = "Video uploaded successfully!";
+    header("Location: PromotionS.php");
+    exit(0);
+  } else {
+    $_SESSION['message'] = "An error occurred";
+    header("Location : PromotionS.php");
+   exit(0);
+  }
+}
+
+//Delete Videos
+if(isset($_POST['Video_delete']))
+{
+  $user_id = $_POST['Video_delete'];
+
+  $query = "DELETE FROM videos WHERE id = '$user_id' ";
   $query_run = mysqli_query($conn, $query);
 
   if($query_run) 

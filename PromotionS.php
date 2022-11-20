@@ -66,7 +66,7 @@ include('authentication.php');
   <thead>
   <tr>
  <th>ID</th>
-  <th>Images/Videos</th>
+  <th>Images</th>
   <th>Delete</th>
  </tr>
 </thead>
@@ -88,9 +88,53 @@ include('authentication.php');
   <tr>
   <td><?= $row['id']; ?></td>
   <td><?= $row['filename']; ?></td>
+
+  
 <td>              
     
   <button type="submit" name = "Image_delete" value= "<?= $row['id']; ?>" class = "btn-delete">Delete</button>
+
+  </tr>
+  <?php
+  } 
+
+
+   ?> 
+    
+    <table class="Table-class">
+  <thead>
+  <tr>
+ <th>ID</th>
+  <th>Videos</th>
+  <th>Delete</th>
+ </tr>
+</thead>
+<tbody>
+
+<label for="image">Video file</label>
+<input type="file"  name="videoName">
+
+<div class="field-button">
+    <button type = "submit" name = "submit_video">Upload</button>
+    </div>
+
+<?php // Get Student information from database
+ $query = "SELECT * FROM videos";
+ $query_run = mysqli_query($conn, $query);
+
+ if(mysqli_num_rows($query_run) > 0)
+  {
+  foreach($query_run as $row)
+  {
+  ?>
+  <tr>
+  <td><?= $row['id']; ?></td>
+  <td><?= $row['videoname']; ?></td>
+
+  
+<td>              
+    
+  <button type="submit" name = "Video_delete" value= "<?= $row['id']; ?>" class = "btn-delete">Delete</button>
 
   </tr>
   <?php
@@ -104,6 +148,7 @@ include('authentication.php');
     </tr>
      <?php
      }
+    }
     ?>
            </form>                   
    </tbody>

@@ -1,5 +1,6 @@
 {
     "cSpell.ignoreWords": [
+        "Aname",
         "Authorised",
         "allcode",
         "confirmpassword",
@@ -8,7 +9,8 @@
         "registercode",
         "servername",
         "tempname",
-        "uploadfile"
+        "uploadfile",
+        "videoname"
     ],
     "cSpell.words": [
         "usernameemail"

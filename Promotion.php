@@ -62,16 +62,29 @@ include('authentication.php');
       {
         while ($data = mysqli_fetch_assoc($query_run)) {
     ?>
-
+          
         <img src="./image/<?php echo $data['filename']; ?>">
-        <video src="./image/<?php echo $data['filename']; ?>"
-          controls>
-
-        </video>
- 
+    
     <?php
         }
       }
+
+    $query = "select * from videos";
+    $query_run = mysqli_query($conn, $query);
+
+    if(mysqli_num_rows($query_run) > 0)
+    {
+      while ($data = mysqli_fetch_assoc($query_run)) {
+  ?>
+        
+      <video src="./video/<?php echo $data['videoName']; ?>"
+      controls>
+
+      </video>
+  
+  <?php
+      }
+    }
       else 
         {
     ?>
