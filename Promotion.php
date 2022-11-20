@@ -77,7 +77,7 @@ include('authentication.php');
       while ($data = mysqli_fetch_assoc($query_run)) {
   ?>
         
-      <video src="./video/<?php echo $data['videoName']; ?>"
+      <video src="./video/<?php echo $data['videoname']; ?>"
       controls>
 
       </video>
