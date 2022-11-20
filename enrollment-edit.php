@@ -24,7 +24,7 @@ include('authentication.php');
 <div class="container">
 <div class="Table-class">
   <h4> Enrollment Information
-  <a href="enrollment.php" class = "btn-delete">BACK</a>
+  <a href="index.php" class = "btn-delete">BACK</a>
   </h4>
 
 
