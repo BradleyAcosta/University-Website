@@ -41,7 +41,7 @@ if(isset($_POST['Image_delete']))
 
   if($query_run) 
   {
-    $_SESSION['message'] = "Admin/user Deleted Successfully";
+    $_SESSION['message'] = "Admin/user Deleted Image Successfully";
     header("Location: PromotionS.php");
     exit(0);
   } else {
@@ -52,7 +52,7 @@ if(isset($_POST['Image_delete']))
 }
 }
 
-//Add Videos for User
+//Submit videos from Admin to Student
 if(isset($_POST['submit_video']))
 {
   $videoname = $_FILES["videoName"]["name"];
@@ -66,7 +66,7 @@ if(isset($_POST['submit_video']))
 
   $query_run = mysqli_query($conn, $sql);
 
-  // Now let's move the uploaded image into the folder: image
+  // Now let's move the uploaded video into the folder: video
   if (move_uploaded_file($tempAname, $Folder)) {
     $_SESSION['message'] = "Video uploaded successfully!";
     header("Location: PromotionS.php");
@@ -88,7 +88,7 @@ if(isset($_POST['Video_delete']))
 
   if($query_run) 
   {
-    $_SESSION['message'] = "Admin/user Deleted Successfully";
+    $_SESSION['message'] = "Admin/user Deleted Video Successfully";
     header("Location: PromotionS.php");
     exit(0);
   } else {
