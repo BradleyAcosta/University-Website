@@ -86,7 +86,7 @@ $query = $conn->query("SELECT * FROM events ORDER BY id");
         {
           calendar.fullCalendar('refetchEvents');
           alert("Added Successfully");
-          window.location.replace("Calendar.php");
+          window.location.replace("CalendarStudent.php");
         }
         })
       }
@@ -126,24 +126,6 @@ $query = $conn->query("SELECT * FROM events ORDER BY id");
         alert("Event Updated");
         }
       });
-      },
- 
-      eventClick:function(event)
-      {
-      if(confirm("Are you sure you want to remove it?"))
-      {
-        var id = event.id;
-        $.ajax({
-        url:"delete.php",
-        type:"POST",
-        data:{id:id},
-        success:function()
-        {
-          calendar.fullCalendar('refetchEvents');
-          alert("Event Removed");
-        }
-        })
-      }
       },
  
     });
