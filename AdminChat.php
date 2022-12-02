@@ -83,9 +83,10 @@ if(isset($_GET["toUser"]))
 ?>
 </h3>
 <div class="modal-body" style = "height: 400px; overflow-y: scroll; overflow-x: hidden;">
+<?php
 
 
-
+?>
 </div>
      
     </header>
