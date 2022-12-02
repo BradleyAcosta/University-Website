@@ -33,8 +33,9 @@ include('authentication.php');
 
 
 <nav>
-    <ul>
+<ul>
     <li><a href ="Admin.php">Home</a></li>
+
     <li><a href ="#">Communication</a>
     <ul>
       <li><a href = "AdminChat.php">Chat</a></li>
@@ -42,7 +43,7 @@ include('authentication.php');
     </ul>
   </li>
   
-    <li><a href ="StudentAD.php">Students</a></li>
+    <li><a href ="StudentAD.php">Student</a></li>
     <li><a href ="PromotionS.php">Uploads</a></li>
 
     <li>

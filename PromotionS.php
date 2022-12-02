@@ -22,9 +22,8 @@ include('authentication.php');
 </head>
 <body>
 <nav>
-    <ul>
+<ul>
     <li><a href ="Admin.php">Home</a></li>
-
 
     <li><a href ="#">Communication</a>
     <ul>
@@ -34,8 +33,7 @@ include('authentication.php');
   </li>
   
     <li><a href ="StudentAD.php">Student</a></li>
-	<li><a href ="PromotionS.php">Uploads</a></li>
-   
+    <li><a href ="PromotionS.php">Uploads</a></li>
 
     <li>
     <div class = "field button">

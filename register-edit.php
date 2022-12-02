@@ -21,18 +21,18 @@ include('authentication.php');
   <body>
 
    <nav>
-    <ul>
-    <li><a href ="Admin.php">Home</a></li>
+   <ul>
+    <li><a href ="/Admin.php">Home</a></li>
 
     <li><a href ="#">Communication</a>
     <ul>
-      <li><a href = "AdminChat.php">Chat</a></li>
-      <li><a href = "Calendar.php">Calendar</a></li>
+      <li><a href = "/src/AdminChat.php">Chat</a></li>
+      <li><a href = "/Calendar.php">Calendar</a></li>
     </ul>
   </li>
   
-    <li><a href ="StudentAD.php">Student</a></li>
-    <li><a href ="PromotionS.php">Uploads</a></li>
+    <li><a href ="/StudentAD.php">Student</a></li>
+    <li><a href ="/PromotionS.php">Uploads</a></li>
 
     <li>
     <div class = "field button">

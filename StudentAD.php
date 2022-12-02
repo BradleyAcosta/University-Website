@@ -22,7 +22,7 @@ include('authentication.php');
   <body>
 
    <nav>
-    <ul>
+   <ul>
     <li><a href ="Admin.php">Home</a></li>
 
     <li><a href ="#">Communication</a>
