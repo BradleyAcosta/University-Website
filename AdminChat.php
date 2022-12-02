@@ -61,15 +61,32 @@ include('authentication.php');
   while($msg = mysqli_fetch_assoc($msgs)) {
     echo '<li><a href ="?toUser='.$msg["id"].'">'.$msg["name"].'</a></li>';
   }
-
-
-
-
   ?>
-
     </ul>
+<h3><?php
+if(isset($_GET["toUser"]))
+{
+  $userName = mysqli_query($conn, "SELECT * FROM registration WHERE id = '".$_GET["toUser"]."'") 
+  or die("Failed to query database");
+ $uName = mysqli_fetch_assoc($userName);
+    echo '<input type = "text" value ='.$_GET["toUser"].' id = "toUser" hidden/>';
+    echo $uName["name"];
+} else {
+  $userName = mysqli_query($conn, "SELECT * FROM registration") 
+  or die("Failed to query database");
+ $uName = mysqli_fetch_assoc($userName);
+ $_SESSION["toUser"] = $uName["id"];
+    echo '<input type = "text" value ='.$_SESSION["toUser"].' id = "toUser" hidden/>';
+    echo $uName["name"];
+}
+
+?>
+</h3>
+<div class="modal-body" style = "height: 400px; overflow-y: scroll; overflow-x: hidden;">
 
 
+
+</div>
      
     </header>
 </body>
