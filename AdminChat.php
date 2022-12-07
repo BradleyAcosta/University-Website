@@ -3,6 +3,7 @@ require 'database/server.php';
 include('allcode.php');
 include('authentication.php');
 
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -82,10 +83,44 @@ if(isset($_GET["toUser"]))
 
 ?>
 </h3>
-<div class="modal-body" style = "height: 400px; overflow-y: scroll; overflow-x: hidden;">
+<div class="modal-body" id = "msgBody" style = "height: 400px; overflow-y: scroll; overflow-x: hidden;">
 <?php
+ if(isset($_GET["toUser"]))
+ {
+  $chats = mysqli_query($conn, "SELECT * FROM chat1 WHERE (FromUser = '".$_SESSION["id"]."' AND 
+  ToUser = '".$_GET["toUser"]."') OR (FromUser = '".$_GET["toUser"]."' AND ToUser = '".$_SESSION["id"]."')") 
+  or die("Failed to query database");
+
+ } else { 
+
+  $chats = mysqli_query($conn, "SELECT * FROM chat1 WHERE (FromUser = '".$_SESSION["id"]."' AND 
+  ToUser = '".$_SESSION["toUser"]."') OR (FromUser = '".$_SESSION["toUser"]."' AND ToUser = '".$_SESSION["id"]."')") 
+  or die("Failed to query database");
+
+while($chat = mysqli_fetch_assoc($chats)) {
+
+  if($chat["FromUser"] == $_SESSION["id"]) {
+    echo "<div style = 'text-align: right;'>
+    <p style = 'background-color: lightblue; word-wrap:break-word; display:inline-block;
+    padding: 5px; border-radius:10px; max width: 70%;'>
+    ".$chat["Message"]."
+    </p>
+    </div>";
+  } else {
+    echo "<div style = 'text-align: left;'>
+    <p style = 'background-color: yellow; word-wrap:break-word; display:inline-block;
+    padding: 5px; border-radius:10px; max width: 70%;'>
+    ".$chat["Message"]."
+    </p>
+    </div>";
+  }
+ 
 
 
+}
+
+}
+ 
 ?>
 </div>
      
