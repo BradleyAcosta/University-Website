@@ -60,19 +60,13 @@ include('authentication.php');
    $msgs = mysqli_query($conn, "SELECT * FROM registration") or die("Failed to query database");
    while($msg = mysqli_fetch_assoc($msgs)) {
      echo '<li><a href ="?toUser='.$msg["id"].'">'.$msg["name"].'</a></li>';
+   
    }
+  ?>
 
-?>
    </header>
-
-       
+  
 </form>
-
-
-
-
 </div>
-
-
 </body>
 </html>

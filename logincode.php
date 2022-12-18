@@ -47,7 +47,7 @@ if(isset($_POST['login_btn']))
     }
     else 
     {
-        //If any wrong information not available int the database, get this error message
+        //If any wrong information not available in the database, get this error message
         $_SESSION['message'] = "Invalid email or password";
         header("Location: login.php");
         exit(0);
