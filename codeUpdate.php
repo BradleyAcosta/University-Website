@@ -119,7 +119,29 @@ if(isset($_POST['user_delete']))
 
 }
 }
-//Text Messages
+//HCt Messages
+if(isset($_POST['add_msg'])) 
+{
+
+$msg = $_POST['msg'];
+$name = $_SESSION['name'];
+
+$query = 'INSERT INTO `posts`(`msg`, `name`) VALUES ("'.$msg.'", "'.$name.'")';
+$query_run = mysqli_query($conn, $query);
+
+if($query_run) 
+  
+  {
+    $_SESSION['message'] = "Message Sended!!";
+    header("Location: AdminChat.php");
+    exit(0);
+  } else {
+    $_SESSION['message'] = "An error occurred";
+    header("Location : AdminChat.php");
+   exit(0);
+
+}
+}
 
 
 //Submit Enrollment

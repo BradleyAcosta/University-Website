@@ -48,22 +48,41 @@ include('authentication.php');
 <div class="container">
     <header> 
       
-    <h1>Hello   </h1>
-     <h3>Welcome to chat! </h3>
-<br>
+     <h1>Welcome to chat! </h1>
 <br>
 
-    <p>Send Message to:</p>
-  <tr>
-  <form action="codeUpdate.php" method="POST">
-  <td><?php 
-   $msgs = mysqli_query($conn, "SELECT * FROM registration") or die("Failed to query database");
-   while($msg = mysqli_fetch_assoc($msgs)) {
-     echo '<li><a href ="?toUser='.$msg["id"].'">'.$msg["name"].'</a></li>';
-   
-   }
-  ?>
+  <div id ="main">
+  <h2>Send Message to:</h2><br>
 
+  <h3 style="background-color:rgb(78, 78, 240); color: white;"> 
+ 
+  <div class = "output">
+    <?php
+  $sql = "Select * from posts";
+  $result = $conn->query($sql);
+  if($result-> num_rows > 0) {
+    //output of the data
+    while($row = $result->fetch_assoc()) {
+      echo "".$row["name"]. " "."::".$row["msg"]."-- ".$row["date"]."<br>";
+      echo "<br>";
+  }
+}
+else {
+  echo "No messages found yet!!";
+}
+
+$conn->close();
+    ?>
+    </h3>
+  </div>
+  <form method="post" action="codeUpdate.php">
+<textarea name="msg" placeholder="Type your message here..." class = "form-control"></textarea><br>
+<button type="submit" name="add_msg">Send!</button>
+  </form><br>
+
+  </div>
+
+  
    </header>
   
 </form>

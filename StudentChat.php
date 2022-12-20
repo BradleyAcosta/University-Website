@@ -50,25 +50,48 @@ include('authentication.php');
      <h3>Welcome to chat! Were you can communicate with us.</h3>
     
     
-      <form method="post" action="">
+     <div class="container">
+    <header> 
+      
+     <h1>Welcome to chat! </h1>
+<br>
 
-      Send user a message: <input type="textarea" name = "input"/>
+  <div id ="main">
+  <h2>Send Message to:</h2><br>
 
-      <input type = "submit" value="Send"/> <br /> <br />
+  <h3 style="background-color:rgb(78, 78, 240); color: white;"> 
+ 
+  <div class = "output">
+    <?php
+  $sql = "Select * from posts";
+  $result = $conn->query($sql);
+  if($result-> num_rows > 0) {
+    //output of the data
+    while($row = $result->fetch_assoc()) {
+      echo "".$row["name"]. " "."::".$row["msg"]."-- ".$row["date"]."<br>";
+      echo "<br>";
+  }
+}
+else {
+  echo "No messages found yet!!";
+}
 
-      </form>
+$conn->close();
+    ?>
+    </h3>
+  </div>
+  <form method="post" action="codeUpdate.php">
+<textarea name="msg" placeholder="Type your message here..." class = "form-control"></textarea><br>
+<button type="submit" name="add_msg">Send!</button>
+  </form><br>
 
+  </div>
 
-<!-- Add later on -->
-
- <iframe src="ChatServerS.php" width= "450" height = "200" scrolling= "yes" >
-
-   </iframe> 
-    
-    
-    
-    </header>
- </div>
+  
+   </header>
+  
+</form>
+</div>
     
 </body>
 </html>
