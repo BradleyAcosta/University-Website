@@ -119,7 +119,7 @@ if(isset($_POST['user_delete']))
 
 }
 }
-//HCt Messages
+//Admin Messages
 if(isset($_POST['add_msg'])) 
 {
 
@@ -142,7 +142,29 @@ if($query_run)
 
 }
 }
+//Student Messages
+if(isset($_POST['stu_msg'])) 
+{
 
+$msg = $_POST['msg'];
+$name = $_SESSION['name'];
+
+$query = 'INSERT INTO `posts`(`msg`, `name`) VALUES ("'.$msg.'", "'.$name.'")';
+$query_run = mysqli_query($conn, $query);
+
+if($query_run) 
+  
+  {
+    $_SESSION['message'] = "Message Sended!!";
+    header("Location: StudentChat.php");
+    exit(0);
+  } else {
+    $_SESSION['message'] = "An error occurred";
+    header("Location : StudentChat.php");
+   exit(0);
+
+}
+}
 
 //Submit Enrollment
 if(isset($_POST['add_enrollment'])) {

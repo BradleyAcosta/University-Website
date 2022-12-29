@@ -11,10 +11,11 @@ include('authentication.php');
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="CSS/Chat.css">
-    <link rel="stylesheet" href="CSS/Calendar.css">
+    <link rel="src/stylesheet" href="CSS/Table.css">
     <link rel="stylesheet" href="CSS/Admin.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  
 
 
 
@@ -46,16 +47,8 @@ include('authentication.php');
    <div class="container">
     <header> 
       
-    <h1>Hello   </h1>
-     <h3>Welcome to chat! Were you can communicate with us.</h3>
-    
-    
-     <div class="container">
-    <header> 
-      
-     <h1>Welcome to chat! </h1>
+     <h1>Welcome to public chat!</h1> 
 <br>
-
   <div id ="main">
   <h2>Send Message to:</h2><br>
 
@@ -82,7 +75,7 @@ $conn->close();
   </div>
   <form method="post" action="codeUpdate.php">
 <textarea name="msg" placeholder="Type your message here..." class = "form-control"></textarea><br>
-<button type="submit" name="add_msg">Send!</button>
+<button type="submit" name="stu_msg">Send!</button>
   </form><br>
 
   </div>
