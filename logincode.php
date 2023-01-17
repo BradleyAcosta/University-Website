@@ -4,6 +4,8 @@ session_start();
 include('database/server.php');
 
 
+
+
 // Login code to make sure the user account is Valid on the database
 if(isset($_POST['login_btn']))
 {
@@ -60,4 +62,5 @@ else
  exit();
 
 }
-?>
+
+

@@ -13,6 +13,7 @@ include('authentication.php');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="src/stylesheet" href="CSS/Table.css">
     <link rel="stylesheet" href="CSS/Admin.css">
+    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
 
     <title>Chat</title>
@@ -51,15 +52,23 @@ include('authentication.php');
 <br>
 
   <div id ="main">
-  <h2>Send Message to:</h2><br>
+  <h2>Send Message:</h2><br>
+    
+  <div class = "input-group mb-3">
+    <input type="text" placeholder="Search..." class="form-control">
+    <button class = "btn btn-primary"></button>
+    
 
-  <h3 style="background-color:black; color: white;"> 
- 
-  <div class = "output">
+
+
+  </div>
+
+
+  </form>
+  
 
 
     </h3>
-  </div>
 
   </div>
 
