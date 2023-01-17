@@ -70,9 +70,9 @@ include('authentication.php');
 </thead>
 <tbody>
 
-<div class="field-button">
-    <button type = "submit" name = "submit_img">Upload</button>
-    </div>
+
+    <button class = "btn btn-primary" type = "submit" name = "submit_img">Upload</button>
+    
 
 <?php // Get Student information from database
  $query = "SELECT * FROM image";
@@ -90,7 +90,7 @@ include('authentication.php');
   
 <td>              
     
-  <button type="submit" name = "Image_delete" value= "<?= $row['id']; ?>" class = "btn-delete">Delete</button>
+  <button type="submit" name = "Image_delete" value= "<?= $row['id']; ?>" class = "btn btn-delete">Delete</button>
 
   </tr>
   <?php
@@ -119,9 +119,9 @@ include('authentication.php');
 <label for="image">Video file</label>
 <input type="file"  name="videoName">
 
-<div class="field-button">
-    <button type = "submit" name = "submit_video">Upload</button>
-    </div>
+
+    <button class = "btn btn-primary" type = "submit" name = "submit_video">Upload</button>
+   
 
 <?php // Get Student information from database
  $query = "SELECT * FROM videos";
@@ -139,7 +139,7 @@ include('authentication.php');
   
 <td>              
     
-  <button type="submit" name = "Video_delete" value= "<?= $row['id']; ?>" class = "btn-delete">Delete</button>
+  <button type="submit" name = "Video_delete" value= "<?= $row['id']; ?>" class = "btn btn-delete">Delete</button>
 
   </tr>
   <?php
