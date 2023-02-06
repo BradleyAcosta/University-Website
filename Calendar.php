@@ -15,6 +15,8 @@ include('authentication.php');
 	<!-- Bootstrap core CSS -->
 	
 		<!-- Custom styles for this template -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.css" />
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -23,8 +25,8 @@ include('authentication.php');
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.js"></script>
 <link rel="stylesheet" href="CSS/Calendar.css">
+    <link rel="stylesheet" href="CSS/Table.css">
 <link rel="stylesheet" href="CSS/Admin.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
 
 
 
@@ -157,7 +159,49 @@ $query = $conn->query("SELECT * FROM events ORDER BY id");
   <br>
   <br>
     <div id="calendar"></div>
+    <h2>Here's the Calendar Updates:</h2>
+<table class="Table-class">
+					<thead>
+						<tr>
+							<th>Title</th>
+							<th>Start Event</th>
+							<th>End event</th>
+              </tr>
+					</thead>
+					<tbody>
+ <?php 
+ 
+   $query = "SELECT * FROM events";
+      $query_run = mysqli_query($conn, $query);
 
-   </div>
+ if(mysqli_num_rows($query_run) > 0)
+  {
+  foreach($query_run as $row)
+  {
+  ?>
+  <tr>
+  <td><?= $row['title']; ?></td>
+  <td><?= $row['start_event']; ?></td>
+   <td><?= $row['end_event']; ?></td>
+  
+
+
+  		<?php
+  }
+}
+else 
+{
+
+
+?>
+    <tr>
+    <td colspan="6">No Record Found</td>
+    </tr>
+     <?php
+     }
+    ?>
+					</tbody>
+</table>
+</div>
  </body>
 </html>

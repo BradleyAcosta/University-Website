@@ -23,7 +23,7 @@ if(isset($_POST['submit_img']))
     exit(0);
   } else {
     $_SESSION['message'] = "An error occurred";
-    header("Location : PromotionS.php");
+    header("Location: PromotionS.php");
    exit(0);
   }
 }
@@ -46,7 +46,7 @@ if(isset($_POST['Image_delete']))
     exit(0);
   } else {
     $_SESSION['message'] = "An error occurred";
-    header("Location : PromotionS.php");
+    header("Location: PromotionS.php");
    exit(0);
 
 }
@@ -73,7 +73,7 @@ if(isset($_POST['submit_video']))
     exit(0);
   } else {
     $_SESSION['message'] = "An error occurred";
-    header("Location : PromotionS.php");
+    header("Location: PromotionS.php");
    exit(0);
   }
 }
