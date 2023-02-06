@@ -22,7 +22,7 @@ if(isset($_POST['submit_img']))
     header("Location: PromotionS.php");
     exit(0);
   } else {
-    $_SESSION['message'] = "An error occurred";
+    $_SESSION['message'] = "HAVE TO ADD AN IMAGE FIRST!!";
     header("Location: PromotionS.php");
    exit(0);
   }
@@ -72,13 +72,13 @@ if(isset($_POST['submit_video']))
     header("Location: PromotionS.php");
     exit(0);
   } else {
-    $_SESSION['message'] = "An error occurred";
+    $_SESSION['message'] = "HAVE TO ADD A VIDEO FIRST!!";
     header("Location: PromotionS.php");
    exit(0);
   }
 }
 
-//Delete Videos
+//Delete Videos From ADmin
 if(isset($_POST['Video_delete']))
 {
   $user_id = $_POST['Video_delete'];

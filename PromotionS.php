@@ -146,8 +146,19 @@ include('authentication.php');
   </tr>
   <?php
   } 
-   }
+  }
+  else
+  {
+
+   ?> 
+    <tr>
+    <td colspan="6">No Record Found</td>
+    </tr>
+    
+<?php
+  }
 ?>
+
            </form>                   
    </tbody>
    </table>
