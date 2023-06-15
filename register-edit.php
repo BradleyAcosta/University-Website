@@ -61,7 +61,7 @@ include('authentication.php');
    if(isset($_GET['id']))
      {
       $user_id = $_GET['id'];
-      $users = "SELECT * FROM registration WHERE id='$user_id' ";
+      $users = "SELECT * FROM registrations WHERE id='$user_id' ";
       $users_run = mysqli_query($conn, $users);
 
    if(mysqli_num_rows($users_run) > 0)

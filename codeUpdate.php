@@ -11,7 +11,7 @@ if(isset($_POST['submit_img']))
   $folder = "./image/" . $filename;
 
   // Get all the submitted data from the form
-  $sql = "INSERT INTO image (filename) VALUES ('$filename')";
+  $sql = "INSERT INTO images (filename) VALUES ('$filename')";
 
 
   $query_run = mysqli_query($conn, $sql);
@@ -36,7 +36,7 @@ if(isset($_POST['Image_delete']))
 {
   $user_id = $_POST['Image_delete'];
 
-  $query = "DELETE FROM image WHERE id = '$user_id' ";
+  $query = "DELETE FROM images WHERE id = '$user_id' ";
   $query_run = mysqli_query($conn, $query);
 
   if($query_run) 

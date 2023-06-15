@@ -12,7 +12,7 @@ if(isset($_POST['login_btn']))
     $email = mysqli_real_escape_string($conn, $_POST['email']);
     $password = mysqli_real_escape_string($conn,$_POST['password']);
 
-    $login_query = "SELECT * FROM registration WHERE email = '$email' AND password = '$password' LIMIT 1";
+    $login_query = "SELECT * FROM registrations WHERE email = '$email' AND password = '$password' LIMIT 1";
     $login_query_run = mysqli_query($conn, $login_query);
 
     if(mysqli_num_rows($login_query_run) > 0)

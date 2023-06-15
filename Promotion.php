@@ -55,7 +55,7 @@ include('authentication.php');
         //ADDED DATA BASE IMAGE FROM ADMIN TO STUDENT
     
        
-        $query = " select * from image ";
+        $query = " select * from images ";
         $query_run = mysqli_query($conn, $query);
 
         if(mysqli_num_rows($query_run) > 0)
