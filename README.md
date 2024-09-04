@@ -1,2 +1,2 @@
 # University-Website
-Webpage
+I developed a web application to streamline student administration at the Polytechnic University of Puerto Rico. Built using XAMP and Visual Studio Code, it features a MySQL database to manage registrations, events, chat logs, and media. The system allows students to register, view events, submit forms, and communicate with admins, while administrators can efficiently manage user accounts and content through a dashboard. Basic authentication is implemented, with plans for enhanced security. This project offers an efficient, organized, and secure solution for student management.
