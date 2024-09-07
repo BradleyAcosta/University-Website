@@ -11,7 +11,7 @@ if(isset($_POST['submit_img']))
   $folder = "./image/" . $filename;
 
   // Get all the submitted data from the form
-  $sql = "INSERT INTO image (filename) VALUES ('$filename')";
+  $sql = "INSERT INTO images (filename) VALUES ('$filename')";
 
 
   $query_run = mysqli_query($conn, $sql);
@@ -36,7 +36,7 @@ if(isset($_POST['Image_delete']))
 {
   $user_id = $_POST['Image_delete'];
 
-  $query = "DELETE FROM image WHERE id = '$user_id' ";
+  $query = "DELETE FROM images WHERE id = '$user_id' ";
   $query_run = mysqli_query($conn, $query);
 
   if($query_run) 
@@ -226,7 +226,7 @@ if(isset($_POST['add_user'])) {
   $role_as = $_POST['Check'];
   $phoneNumber = $_POST['phoneNumber'];
 
-  $query = "INSERT INTO registration (name, username, email, password, `Check`, phoneNumber) VALUES ('$name', '$user_name', '$email','$password','$role_as', '$phoneNumber')";
+  $query = "INSERT INTO registrations (name, username, email, password, `Check`, phoneNumber) VALUES ('$name', '$user_name', '$email','$password','$role_as', '$phoneNumber')";
   $query_run = mysqli_query($conn, $query);
 
   if($query_run) 
@@ -256,7 +256,7 @@ if(isset($_POST['update_user']))
 
 
 
-  $query = "UPDATE registration SET name = '$name', username = '$user_name', email = '$email', password = '$password', `Check` ='$role_as', phoneNumber = '$phoneNumber'
+  $query = "UPDATE registrations SET name = '$name', username = '$user_name', email = '$email', password = '$password', `Check` ='$role_as', phoneNumber = '$phoneNumber'
   WHERE id ='$user_id' ";
 
   $query_run = mysqli_query($conn, $query);

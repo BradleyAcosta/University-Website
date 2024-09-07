@@ -75,7 +75,7 @@ include('authentication.php');
     
 
 <?php // Get Student information from database
- $query = "SELECT * FROM image";
+ $query = "SELECT * FROM images";
  $query_run = mysqli_query($conn, $query);
 
  if(mysqli_num_rows($query_run) > 0)
