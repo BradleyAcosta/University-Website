@@ -98,10 +98,7 @@ include('authentication.php');
 </td>
   		<?php
   }
-}
-else 
-{
-
+} else {
 
 ?>
     <tr>
@@ -110,13 +107,8 @@ else
      <?php
      }
     ?>
-					</tbody>
-				</table>
-			</div>
-      
-			
-
-
-
-  </body>
+		 </tbody>
+	  </table>
+	 </div>
+ </body>
 </html>
